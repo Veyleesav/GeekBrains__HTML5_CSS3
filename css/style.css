@@ -127,6 +127,7 @@ main section:nth-child(2n) {
 }
 
 .dignity__details {
+    position: relative;
     width: 530px;
 }
 
@@ -142,10 +143,7 @@ main section:nth-child(2n) {
 }
 
 .dignity__details__summary::-webkit-details-marker {
-    width: 32px;
-    height: 32px;
-    background-color: #43505f;
-    color: transparent;
+    display: none;
 }
 
 .dignity__details__summary:focus::-webkit-details-marker {
@@ -155,25 +153,29 @@ main section:nth-child(2n) {
 
 /* Plus or minus on click */
 .dignity__details__summary::before {
+    position: absolute;
+    display:block;
+    width: 40px;
+    height:40px;
+    background-color: #43505f;
     content: "+";
-    position: relative;
+    text-align: center;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    right: -26px;
-    top: -3px;
+    font-size: 45px;
+    line-height:42px;
+    font-weight: 500;
+    right: 540px;
+    top: 5px;
 }
 
 .dignity__details[open] > .dignity__details__summary::before {
     content: "–";
-    position: relative;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 700;
-    right: -25px;
-    top: -6px;
+    line-height:35px;
 }
 
 .dignity__details__text {
