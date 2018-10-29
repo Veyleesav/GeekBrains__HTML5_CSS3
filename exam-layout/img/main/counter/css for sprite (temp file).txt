@@ -1,0 +1,6 @@
+.sprite { background: url('sprite.png') no-repeat top left; width: 44px; height: 44px;  } 
+.sprite.icon-4 { background-position: 0 0; } 
+.sprite.icon-3 { background-position: -54px 0; width: 48px; } 
+.sprite.icon-2 { background-position: -112px 0; } 
+.sprite.icon-1 { background-position: -166px 0; } 
+.sprite.icon { background-position: -220px 0; width: 54px; } 
