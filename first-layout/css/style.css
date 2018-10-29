@@ -168,6 +168,10 @@ main section:nth-child(2n) {
     right: 540px;
     top: 5px;
 }
+.dignity__details__summary:hover{
+    cursor: pointer;
+}
+
 
 .dignity__details[open] > .dignity__details__summary::before {
     content: "–";
@@ -412,6 +416,7 @@ main section:nth-child(2n) {
 }
 
 .buy-now__price-card__buy-button {
+    outline:none;
     margin: 20px 20px;
     display: block;
     text-decoration: none;
@@ -432,7 +437,12 @@ main section:nth-child(2n) {
     -webkit-box-shadow: inset 2px 2px 10px 0 rgba(0, 0, 0, 0.75);
     box-shadow: inset 2px 2px 10px 0 rgba(0, 0, 0, 0.75);
 }
-
+.buy-now__price-card__buy-button:hover{
+    background-color: #f2f2f2;
+}
+input{
+    outline:none;
+}
 .contacts {
     width: 100%;
     display: -webkit-box;
@@ -528,6 +538,7 @@ main section:nth-child(2n) {
     border-radius: 5px;
     border-color: transparent;
     resize: none;
+    outline: none;
 }
 
 .contacts__form__message::-webkit-input-placeholder {
@@ -586,8 +597,16 @@ main section:nth-child(2n) {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    border-style: none;
 }
+.contacts__form__submit:active{
+    -webkit-box-shadow: inset 1px 1px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: inset 1px 1px 10px 0 rgba(0, 0, 0, 0.75);
+}
+.contacts__form__submit:hover{
+    background-color: #f2f2f2;
 
+}
 .contacts__stay-tuned {
     width: 240px;
 }
@@ -679,7 +698,9 @@ main section:nth-child(2n) {
     height: 42px;
     width: 42px;
 }
-
+.contacts__stay-tuned__twitter:hover, .contacts__stay-tuned__facebook:hover, .contacts__stay-tuned__linked-in:hover, .contacts__stay-tuned__google:hover, .contacts__stay-tuned__youtube:hover{
+    background-color: darkgray;
+}
 .contacts__stay-tuned__twitter {
     background-position: -1px 0;
 }
