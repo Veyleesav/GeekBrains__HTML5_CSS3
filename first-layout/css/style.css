@@ -605,6 +605,7 @@ input{
 }
 .contacts__form__submit:hover{
     background-color: #f2f2f2;
+    cursor: pointer;
 
 }
 .contacts__stay-tuned {
@@ -664,6 +665,7 @@ input{
 
 .contacts__stay-tuned__address__list li a:hover {
     border-bottom: 2px solid #ffffff;
+    cursor: pointer;
 }
 
 .contacts__stay-tuned__social {
