@@ -1,0 +1,7 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}body {
+    background: repeating-linear-gradient(-45deg, #465298, #465298 8px, #3d3d4e 8px, #3d3d4e 9px),
+                repeating-linear-gradient();
+}
