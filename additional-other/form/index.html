@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form action="#" method="post" class="main-form">
+    <div class="big-wrapper">
+        <div class="wrapper">
+            <div class="name">тип</div>
+            <div class="radio">
+                <input type="radio" id="accessorises" name="radio-group" checked>
+                <label for="accessorises">Аксессуар для интерьера</label>
+                <input type="radio" id="kid-toy" name="radio-group">
+                <label for="kid-toy">Детская игрушка</label>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="name">цвет</div>
+            <div class="checkbox">
+                <input type="checkbox" id="white" checked="checked"/>
+                <label for="white">Белый</label>
+                <input type="checkbox" id="black"/>
+                <label for="black">Черный</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="grey" checked="checked"/>
+                <label for="grey">Серый</label>
+                <input type="checkbox" id="pink"/>
+                <label for="pink">Розовый</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="tiffany"/>
+                <label for="tiffany">"Тиффани"</label>
+                <input type="checkbox" id="orange"/>
+                <label for="orange">Оранжевый</label>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="name">фио</div>
+            <div class="text-inputs">
+                <div class="text-grp">
+                    <label for="last-name">Фамилия:</label>
+                    <input id="last-name" type="text" placeholder="Укажите фамилию">
+                </div>
+                <div class="text-grp">
+                    <label for="first-name">Имя:</label>
+                    <input id="first-name" type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="text-grp">
+                    <label for="middle-name">Отчество:</label>
+                    <input id="middle-name" type="text" placeholder="Отчество, если желаете">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper wr-last">
+            <div class="name">тел</div>
+            <div class="text-inputs">
+                <div class="text-grp">
+                    <label class="tel-label" for="tel">
+                        <input class="tel" id="tel" type="tel" placeholder="+7 XXX XX XX">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper wr-last">
+            <div class="name">e-mail</div>
+            <div class="text-inputs">
+                <div class="text-grp">
+                    <label class="email-label" for="e-mail">
+                        <input class="email" id="e-mail" type="email" placeholder="Мы не будем спамить, честно!">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
+
