@@ -1,7 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 header {
-  background: #474541 url("../../img/header/slider/header__slider__img.jpg"); }
+  width: 1920px;
+  height: 1024px;
+  background: #474541 url("../img/header/slider/header__slider__img.jpg");
+  margin: 0 auto; }
 
 .header-top {
-  display: flex; }
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding-top: 40px; }
+  .header-top .logo {
+    display: flex; }
+    .header-top .logo span {
+      display: flex;
+      font-family: 'Raleway', sans-serif;
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -1.4px;
+      color: #ffffff;
+      align-items: center; }
+  .header-top .header-top__menu {
+    display: flex; }
+    .header-top .header-top__menu .header-top__menu__navigation-icons {
+      display: flex;
+      align-self: center;
+      justify-self: flex-end; }
+
+.menu__list {
+  display: flex;
+  flex-flow: row nowrap; }
+  .menu__list .menu__list__link {
+    list-style-type: none;
+    margin: 0 15px 0 15px; }
+    .menu__list .menu__list__link a {
+      display: block;
+      text-transform: capitalize;
+      text-decoration: none;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; }
+    .menu__list .menu__list__link a:hover {
+      color: #c7b299; }
 
 /*# sourceMappingURL=style.css.map */
