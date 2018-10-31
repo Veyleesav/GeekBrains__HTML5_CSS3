@@ -2,6 +2,53 @@ body {
     width: 100vw;
     height: 100vh;
 }body {
-    background: repeating-linear-gradient(-45deg, #465298, #465298 8px, #3d3d4e 8px, #3d3d4e 9px),
-                repeating-linear-gradient();
+    background: #323355;
 }
+ main{
+     display: flex;
+     width: 100vw;
+     height: 100vh;
+background:  repeating-linear-gradient(to top, #2a2a2a, #2a2a2a 1px, transparent, transparent 2px ),
+            repeating-linear-gradient(to right, transparent, transparent 1px, #323355, #323355 2px );
+            background-blend-mode: color;
+ }
+ .stripes-bg{
+     display: flex;
+     width: 100vw;
+     height: 100vh;
+     background: repeating-linear-gradient(-45deg,#323355 , #323355 8px, #3d3d4e 8px, #3d3d4e 9px);
+     position: absolute;
+     opacity: 0.5;
+ }
+ .timeline{
+     display: flex;
+     margin: auto;
+     width: 670px;
+     height: 900px;
+     border: 1px solid red;
+ }
+ .vertical-line{
+     border-left: 3px solid #5e607a;
+     height: 900px;
+     margin: auto;
+     overflow: visible;
+     position: relative;
+ }
+ .vertical-line::after{
+     content: '2011';
+     font-family: Helvetica, sans-serif;
+     font-weight: bold;
+     font-size:12px;
+     line-height: 48px;
+     color:#ffffff;
+     position: absolute;
+     display: block;
+     text-align: center;
+     background-image: linear-gradient(to bottom, #737c9c, #6c7493, #646b8a, #5d6381, #565b78);
+     -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+     -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+     border-radius: 50%;
+     width: 50px;
+     height:50px;
+ }
