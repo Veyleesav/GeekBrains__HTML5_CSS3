@@ -1,77 +1,21 @@
 @import "logo";
 @import "nav";
 @import "slider";
-$width:1920px;
-$header-height:1024px;
+@import "header__values";
 @mixin centring{
   margin: 0 auto;
 }
 header{
   width: $width;
   height: $header-height;
-  background: #474541 url("../img/header/slider/header__slider__img.jpg");
   @include centring;
 }
 .header-top{
+  z-index:1;
 display:flex;
 flex-flow: row nowrap;
   justify-content: space-evenly;
   padding-top: 40px;
-  .logo{
-    display: flex;
-    span{
-      display: flex;
-      font-family: 'Raleway', sans-serif;
-      font-size: 34px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: -1.4px;
-      color: #ffffff;
-      align-items: center;
-    }
-  }
-  .header-top__menu{
-    display: flex;
-    .header-top__menu__navigation-icons{
-      display: flex;
-      margin-left: 60px;
-      .header-top__menu__navigation-icons__icon{
-        margin: 0 14px;
-        &:hover{
-          filter: invert(.5) sepia(1) saturate(0.9);  /* cool css filter magic to avoid big svg constructions and 'fill' */
-          cursor: pointer;
-        }
-      }
-    }
-  }
 }
 
-.menu__list{
-  display: flex;
-  flex-flow: row nowrap;
-  .menu__list__link{
-    list-style-type:none ;
-    margin: 0 15px 0 15px;
-     a{
-       display: block;
-       text-transform: capitalize;
-       text-decoration: none;
-       font-family: Montserrat, sans-serif;
-       font-size: 14px;
-       font-weight: 300;
-       font-style: normal;
-       font-stretch: normal;
-       line-height: normal;
-       letter-spacing: normal;
-       text-align: left;
-       color: #ffffff;
-     }
-    a:hover{
-      color: #c7b299;
-      cursor: pointer;
-    }
 
-  }
-}

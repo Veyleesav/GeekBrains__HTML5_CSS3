@@ -1,0 +1,20 @@
+@import "header__values";
+.logo{
+  display: flex;
+  .home-link-logo{
+    display: flex;
+    text-decoration: none;
+  }
+  span{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.4px;
+    color: #ffffff;
+    align-items: center;
+  }
+}

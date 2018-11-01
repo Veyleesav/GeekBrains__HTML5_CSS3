@@ -1,0 +1,189 @@
+@import "header__values";
+.slider{
+  .slider__bg{
+    z-index:0;
+    width: $width;
+    height: $header-height;
+    background-size:$width, $header-height ;
+    margin-top:-96px;
+    overflow-x: hidden;
+  }
+  #slider__bg-1{
+    background: #474541 url("../img/header/slider/header__slider__img-1.jpeg") no-repeat;
+    transform: translateX($slider-shift);
+  }
+  #slider__bg-2{
+    background: #474541 url("../img/header/slider/header__slider__img-2.jpg") no-repeat;
+    margin-top: -$header-height;
+
+  }
+  #slider__bg-3{
+    background: #474541 url("../img/header/slider/header__slider__img-3.jpeg") no-repeat;
+    margin-top: -$header-height;
+    transform: translateX($slider-shift);
+  }
+  #slider__bg-4{
+    background: #474541 url("../img/header/slider/header__slider__img-4.jpeg") no-repeat;
+    margin-top: -$header-height;
+    transform: translateX($slider-shift);
+  }
+  #slider__bg-5{
+    background: #474541 url("../img/header/slider/header__slider__img-5.jpeg") no-repeat;
+    margin-top: -$header-height;
+    transform: translateX($slider-shift);
+  }
+  .slider__central-block{
+    display: flex;
+    justify-content: space-evenly;
+    width: $width;
+    height: 0;
+    .slider__arrow{
+      width: 50px;
+      height: 50px;
+      border-width: 3px 3px 0 0;
+      border-style: solid;
+      margin: 10px;
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      opacity: 0.5;
+    }
+    .slider__arrow-left{
+      transform: rotate(-135deg);
+      top:-550px;
+      &:hover{
+        cursor:pointer;
+        color: #d3c1ad;
+      }
+    }
+    .slider__arrow-right{
+      transform: rotate(45deg);
+      top:-550px;
+      &:hover{
+        cursor:pointer;
+        color: #d3c1ad;
+      }
+    }
+    .slider__central{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      min-width: 600px;
+      margin-top: -$header-height;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      width: 600px;
+      .slider__central__subheader{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 36px;
+        width: 460px;
+        margin-bottom: 0;
+      }
+      .slider__central__header{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 52px;
+        width: 590px;
+        margin-bottom: 4px;
+        margin-top: 14px;
+      }
+      .slider__central__text{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 16px;
+        width: 565px;
+      }
+      .slider__central__button{
+        margin-top: 36px;
+        display: flex;
+        text-decoration: none;
+        width: 170px;
+        min-height: 53px;
+        border-radius: 3px;
+        box-shadow: inset 0px -3px 0 0 #736357;
+        background-color: $button-color;
+        font-size: 14px;
+        font-weight: 800;
+        color: #ffffff;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+          background-color: $button-hover;
+        }
+        &:active{
+          background-color: $button-active;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .slider__radio-buttons{
+    display: flex;
+    z-index:1;
+    margin-top: -42px ;
+    justify-content: center;
+    /* The container */
+    .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default radio button */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 11px;
+      width: 11px;
+      background-color: #ffffff;
+      opacity: 0.5;
+      border-radius: 50%;
+    }
+
+    /* On mouse-over*/
+    .container:hover input ~ .checkmark {
+      background-color:#c7b299;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+      background-color: transparent;
+      margin: -2px -2px;
+      border: solid 2px #d3c1ad
+    }
+  }
+}

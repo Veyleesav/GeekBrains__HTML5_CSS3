@@ -1,6 +1,10 @@
 @import "header/header";
 @import "main/main";
 @import "footer/footer";
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+$width:1920px;
+body{
+  width: $width;
+  margin: 0 auto;
+}
