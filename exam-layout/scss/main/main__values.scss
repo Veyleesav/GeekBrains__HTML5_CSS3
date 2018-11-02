@@ -1,0 +1,6 @@
+$width:1920px;
+@mixin centring-flex{
+  margin: 0 auto;
+  padding:0;
+  display: flex;
+}

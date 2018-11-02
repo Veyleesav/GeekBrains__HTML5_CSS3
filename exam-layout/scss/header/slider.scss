@@ -1,32 +1,38 @@
 @import "header__values";
 .slider{
+
   .slider__bg{
     z-index:0;
-    width: $width;
+    max-width: $width;
     height: $header-height;
     background-size:$width, $header-height ;
     margin-top:-96px;
     overflow-x: hidden;
   }
   #slider__bg-1{
+    box-sizing: border-box;
     background: linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/header/slider/header__slider__img-1.jpg");
     transform: translateX($slider-shift);
   }
   #slider__bg-2{
+    box-sizing: border-box;
     background:linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/header/slider/header__slider__img-2.jpg") no-repeat;
     margin-top: -$header-height;
   }
   #slider__bg-3{
+    box-sizing: border-box;
     background: linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/header/slider/header__slider__img-3.jpg") no-repeat;
     margin-top: -$header-height;
     transform: translateX($slider-shift);
   }
   #slider__bg-4{
+    box-sizing: border-box;
     background: linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/header/slider/header__slider__img-4.jpg") no-repeat;
     margin-top: -$header-height;
     transform: translateX($slider-shift);
   }
   #slider__bg-5{
+    box-sizing: border-box;
     background: linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/header/slider/header__slider__img-5.jpg") no-repeat;
     margin-top: -$header-height;
     transform: translateX($slider-shift);
@@ -34,7 +40,7 @@
   .slider__central-block{
     display: flex;
     justify-content: space-evenly;
-    width: $width;
+    max-width: $width;
     height: 0;
     .slider__arrow{
       width: 50px;
