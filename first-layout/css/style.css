@@ -682,7 +682,7 @@ input{
 }
 
 .contacts__stay-tuned__social a {
-    display: block;
+    display: flex;
     text-decoration: none;
     font-style: normal;
     font-family: Arial, sans-serif;
@@ -692,8 +692,10 @@ input{
     text-align: left;
     border-radius: 50%;
     border-color: transparent;
+    align-items: center;
+    justify-content: center;
 }
-
+/*
 .contacts__stay-tuned__twitter, .contacts__stay-tuned__facebook, .contacts__stay-tuned__linked-in, .contacts__stay-tuned__google, .contacts__stay-tuned__youtube {
     background: url("../img/contacts/stay-tuned/social/contacts__stay-tuned__social.png");
     background-repeat: no-repeat;
@@ -721,6 +723,15 @@ input{
 
 .contacts__stay-tuned__youtube {
     background-position: -198px 0;
+}
+*/
+.contacts__stay-tuned__twitter, .contacts__stay-tuned__facebook, .contacts__stay-tuned__linked-in, .contacts__stay-tuned__google, .contacts__stay-tuned__youtube{
+    height: 42px;
+    width: 42px;
+    background-color: #ffffff
+}
+i{
+    color: #414f60;
 }
 
 .footer {
