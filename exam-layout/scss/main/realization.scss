@@ -1,7 +1,7 @@
 @import "main__values";
 .realization{
   overflow: hidden;
-  @include centring-flex;
+  @include default-block;
   max-width: $width;
   min-height:700px;
   flex-flow: column nowrap;
@@ -66,16 +66,17 @@
     .realization__image-left:hover,.realization__image-right:hover{
       transform: scaleY(1.205) translateY(-32px);
     }
-    .realization__image-left:hover ~ .realization__image-center{
+    .realization__image-left:hover ~ .realization__image-center{  /* WORKS */
       transform: scaleY(0.82987551867) translateY(48px);
       transition-property: transform;
       transition-duration: 0.3s;
     }
-    .realization__image-right:hover ~ .realization__image-center{
+    .realization__image-right:hover + .realization__image-center{  /* DOESEN`T WORK */
       transform: scaleY(0.82987551867) translateY(48px);
       transition-property: transform;
       transition-duration: 0.3s;
     }
+
 
   }
 }

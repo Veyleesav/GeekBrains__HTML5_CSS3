@@ -1,0 +1,64 @@
+@import "main__values";
+.latest-projects{
+  @include default-block;
+  .latest-projects__header{
+    text-transform: capitalize;
+    font-family: Raleway,sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #555555;
+    margin: 0 auto;
+    padding: 81px 0 24px 0;
+  }
+  .latest-projects__text{
+    font-family: Montserrat,sans-serif;
+    width: 770px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #8c8c8c;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+  .latest-projects__menu{
+    .latest-projects__menu__button{
+      outline: none;
+      text-transform: capitalize;
+      width: 120px;
+      min-height: 32px;
+      border-radius: 3px;
+      background-color: #ebebeb;
+      font-family: Montserrat,sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #8c8c8c;
+      border-color: transparent;
+      &:hover{
+        background-color: #998675;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      &:nth-child(1){
+        width: 70px;
+      }
+      &:nth-child(5){
+        width: 135px;
+      }
+    }
+  }
+}

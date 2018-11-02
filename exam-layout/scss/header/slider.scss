@@ -117,28 +117,9 @@
         width: 585px;
       }
       .slider__central__button{
-        margin-top: 36px;
-        display: flex;
-        text-decoration: none;
-        width: 170px;
+        @include default-button;
         min-height: 53px;
-        border-radius: 3px;
-        box-shadow: inset 0px -3px 0 0 #736357;
-        background-color: $button-color;
-        font-size: 14px;
-        font-weight: 800;
-        color: #ffffff;
-        text-transform: uppercase;
-        justify-content: center;
-        align-items: center;
 
-        &:hover{
-          background-color: $button-hover;
-        }
-        &:active{
-          background-color: $button-active;
-          box-shadow: none;
-        }
       }
     }
   }

@@ -5,3 +5,31 @@ $slider-shift: -$width*3; /* cuz overflow:hidden doesn`t work with positive numb
 $button-color:#998675;
 $button-hover: darken($button-color,10%);
 $button-active: darken($button-color, 20%);
+@mixin default-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 170px;
+  min-height: 50px;
+  border-radius: 3px;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  background-color: $button-color;
+  text-transform: uppercase;
+  font-family: Raleway,sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  &:hover{
+    background-color: $button-hover;
+  }
+  &:active{
+    background-color: $button-active;
+    box-shadow: none;
+  }
+}
