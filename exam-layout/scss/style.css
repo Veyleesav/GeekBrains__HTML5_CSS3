@@ -598,31 +598,33 @@ header {
     color: #8c8c8c;
     margin: 0 auto;
     padding: 0 0 40px 0; }
-  .latest-projects .latest-projects__menu .latest-projects__menu__button {
-    outline: none;
-    text-transform: capitalize;
-    width: 120px;
-    min-height: 32px;
-    border-radius: 3px;
-    background-color: #ebebeb;
-    font-family: Montserrat,sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #8c8c8c;
-    border-color: transparent; }
-    .latest-projects .latest-projects__menu .latest-projects__menu__button:hover {
-      background-color: #998675;
-      color: #ffffff;
-      cursor: pointer; }
-    .latest-projects .latest-projects__menu .latest-projects__menu__button:nth-child(1) {
-      width: 70px; }
-    .latest-projects .latest-projects__menu .latest-projects__menu__button:nth-child(5) {
-      width: 135px; }
+  .latest-projects .latest-projects__menu {
+    padding: 0 0 40px 0; }
+    .latest-projects .latest-projects__menu .latest-projects__menu__button {
+      outline: none;
+      text-transform: capitalize;
+      width: 120px;
+      min-height: 32px;
+      border-radius: 3px;
+      background-color: #ebebeb;
+      font-family: Montserrat,sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #8c8c8c;
+      border-color: transparent; }
+      .latest-projects .latest-projects__menu .latest-projects__menu__button:hover {
+        background-color: #998675;
+        color: #ffffff;
+        cursor: pointer; }
+      .latest-projects .latest-projects__menu .latest-projects__menu__button:nth-child(1) {
+        width: 70px; }
+      .latest-projects .latest-projects__menu .latest-projects__menu__button:nth-child(5) {
+        width: 135px; }
 
 /* > FONTS > */
 @font-face {
