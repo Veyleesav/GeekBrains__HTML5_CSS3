@@ -1,5 +1,6 @@
 $width:1920px;
 $header-height:1024px;
+$menu-hover-color: #c7b299;
 $slider-shift: -$width*3; /* cuz overflow:hidden doesn`t work with positive number*/
 $button-color:#998675;
 $button-hover: darken($button-color,10%);

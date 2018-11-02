@@ -6,17 +6,23 @@
   .logo .home-link-logo {
     display: flex;
     text-decoration: none; }
-  .logo span {
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    font-size: 34px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -1.4px;
-    color: #ffffff;
-    align-items: center; }
+    .logo .home-link-logo .home-link-logo__logo {
+      fill: #ffffff; }
+    .logo .home-link-logo .home-link-logo__logo-text {
+      display: flex;
+      font-family: 'Raleway', sans-serif;
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -1.4px;
+      color: #ffffff;
+      align-items: center; }
+  .logo:hover .home-link-logo__logo-text {
+    color: #c7b299; }
+  .logo:hover .home-link-logo__logo {
+    fill: #c7b299; }
 
 /* cuz overflow:hidden doesn`t work with positive number*/
 .header-top__menu {
@@ -117,7 +123,7 @@
     align-content: center;
     align-items: center;
     min-width: 600px;
-    margin-top: -1024px;
+    margin-top: -1044.48px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-stretch: normal;
@@ -132,7 +138,7 @@
       justify-content: center;
       font-weight: 500;
       font-size: 36px;
-      width: 460px;
+      width: 462px;
       margin-bottom: 0; }
     .slider .slider__central-block .slider__central .slider__central__header {
       display: flex;
@@ -142,15 +148,16 @@
       font-size: 52px;
       width: 590px;
       margin-bottom: 4px;
-      margin-top: 14px; }
+      margin-top: 0; }
     .slider .slider__central-block .slider__central .slider__central__text {
       display: flex;
+      font-family: Montserrat, sans-serif;
       align-content: center;
       justify-content: center;
       font-weight: 300;
       line-height: 1.5;
       font-size: 16px;
-      width: 565px; }
+      width: 585px; }
     .slider .slider__central-block .slider__central .slider__central__button {
       margin-top: 36px;
       display: flex;
