@@ -118,6 +118,7 @@
       }
       .slider__central__button{
         @include default-button;
+        margin-top: 35px;
         min-height: 53px;
 
       }

@@ -183,6 +183,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
+      margin-top: 35px;
       min-height: 53px; }
       .slider .slider__central-block .slider__central .slider__central__button:hover {
         background-color: #7e6d5d; }
