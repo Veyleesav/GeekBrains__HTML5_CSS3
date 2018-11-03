@@ -626,6 +626,73 @@ header {
         width: 70px; }
       .latest-projects .latest-projects__menu .latest-projects__menu__button:nth-child(5) {
         width: 135px; }
+  .latest-projects .latest-projects__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1200px; }
+    .latest-projects .latest-projects__wrapper .latest-projects__project {
+      padding: 0 0;
+      margin: 0 15px 30px 15px; }
+      .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__img {
+        width: 370px;
+        height: 237px;
+        margin: 0;
+        padding: 0; }
+      .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption {
+        position: relative;
+        margin: -4px 0 0 0;
+        background: #fbfaf9;
+        text-align: left; }
+        .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption:before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 15px 10px 15px;
+          border-color: transparent transparent #fbfaf8 transparent;
+          top: -10px;
+          left: 19px; }
+        .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption .latest-projects__project__caption__header {
+          padding: 30px 0 14px 29px;
+          margin: 0 0;
+          font-family: Raleway,sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #c7b299; }
+        .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption .latest-projects__project__caption__text {
+          margin: 0 0;
+          padding: 0 0 27px 30px; }
+  .latest-projects .latest-projects__load-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 170px;
+    min-height: 50px;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: #998675;
+    text-transform: uppercase;
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 40px 0 80px 0; }
+    .latest-projects .latest-projects__load-btn:hover {
+      background-color: #7e6d5d; }
+    .latest-projects .latest-projects__load-btn:active {
+      background-color: #615347;
+      box-shadow: none; }
 
 /* > FONTS > */
 @font-face {
