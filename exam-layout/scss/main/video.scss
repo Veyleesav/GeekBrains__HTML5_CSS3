@@ -1,0 +1,51 @@
+@import "main__values";
+.video{
+  @include default-block;
+  position: relative;
+  .video__player{
+    min-width: 1920px;
+    min-height: 705px;
+    object-fit: fill;
+  }
+  .video__overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    min-width: 1920px;
+    min-height: 705px;
+    text-align: center;
+    .video__overlay__play{
+      /* style the button */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 0.2;
+      background-color: #000000;
+    }
+    .video__overlay__header{
+      font-family: Raleway,sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 0;
+      padding: 44px 0 29px 0;
+      text-transform: capitalize;
+
+    }
+    .video__overlay__text{
+      font-family: Montserrat,sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+    }
+  }

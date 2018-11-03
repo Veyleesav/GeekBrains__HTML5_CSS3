@@ -694,6 +694,56 @@ header {
       background-color: #615347;
       box-shadow: none; }
 
+.video {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  max-width: 1920px;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+  .video .video__player {
+    min-width: 1920px;
+    min-height: 705px;
+    object-fit: fill; }
+  .video .video__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    min-width: 1920px;
+    min-height: 705px;
+    text-align: center; }
+    .video .video__overlay .video__overlay__play {
+      /* style the button */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 0.2;
+      background-color: #000000; }
+    .video .video__overlay .video__overlay__header {
+      font-family: Raleway,sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 0;
+      padding: 44px 0 29px 0;
+      text-transform: capitalize; }
+    .video .video__overlay .video__overlay__text {
+      font-family: Montserrat,sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff; }
+
 /* > FONTS > */
 @font-face {
   font-family: Raleway;
