@@ -2,13 +2,20 @@
 .header-top__menu{
   display: flex;
   margin-left: -175px;
+  justify-content: center;
+  align-items: center;
   .header-top__menu__navigation-icons{
     display: flex;
     margin-left: 30px;
+    .header-top__menu__navigation-icon-wrapper{
+      text-decoration: none;
+      display: block;
+    }
     .header-top__menu__navigation-icons__icon{
+      fill: #ffffff;
       margin: 0 14px;
       &:hover{
-        filter: invert(.5) sepia(1) saturate(0.9);  /* cool css filter magic to avoid big svg constructions and 'fill' */
+        fill: $menu-hover-color;;
         cursor: pointer;
       }
     }
