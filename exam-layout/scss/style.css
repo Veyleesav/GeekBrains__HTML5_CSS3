@@ -632,12 +632,22 @@ header {
     width: 1200px; }
     .latest-projects .latest-projects__wrapper .latest-projects__project {
       padding: 0 0;
-      margin: 0 15px 30px 15px; }
+      margin: 0 15px 30px 15px;
+      position: relative; }
       .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__img {
         width: 370px;
         height: 237px;
         margin: 0;
         padding: 0; }
+      .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__modal {
+        z-index: 5;
+        position: absolute;
+        display: flex;
+        width: 370px;
+        height: 237px;
+        align-items: center;
+        justify-content: center;
+        top: 0; }
       .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption {
         position: relative;
         margin: -4px 0 0 0;
@@ -955,6 +965,8 @@ header {
       text-align: center;
       color: #c7b299;
       margin-bottom: 0;
+      margin-top: 0;
+      padding: 21px 0 0 0;
       display: flex;
       flex-flow: column; }
       .counter .counter__card .counter__card__text:after {
