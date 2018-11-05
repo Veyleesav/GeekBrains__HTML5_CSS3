@@ -7,24 +7,57 @@
   justify-content: center;
   min-height: 300px;
   .counter__card{
-    padding: 60px 40px 60px 40px;
+    padding: 0 40px 0 40px;
     margin: 44px 0 0 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
-    position: relative;
 
     &:nth-child(1):before{
-      position: absolute;
-      top:0;
-      left:110.5px;
+      align-self: center;
+      margin-bottom: 30px;
       content: '';
       background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
       width: 44px;
       height: 44px;
       background-position: 0 0;
+    }
+    &:nth-child(2):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 48px;
+      height: 44px;
+      background-position: -54px 0;
+    }
+    &:nth-child(3):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 44px;
+      height: 44px;
+      background-position: -112px 0;
+    }
+    &:nth-child(4):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 44px;
+      height: 44px;
+      background-position: -166px 0;
+    }
+    &:nth-child(5):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 54px;
+      height: 44px;
+      background-position: -220px 0;
     }
 
 
@@ -38,6 +71,30 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
+    }
+    .counter__card__text{
+      text-transform: uppercase;
+      font-family: Montserrat,sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: center;
+      color: #c7b299;
+      margin-bottom:0;
+      display: flex;
+      flex-flow: column;
+      &:after{
+        display: flex;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        align-self: center;
+        margin-top: 30px;
+      }
     }
   }
 

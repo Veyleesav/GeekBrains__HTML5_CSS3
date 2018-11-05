@@ -1,5 +1,0 @@
-.sprite { background: url('sprite.png') no-repeat top left; width: 44px;  } 
-.sprite.icon-3 { background-position: 0 0; width: 49px; height: 49px; } 
-.sprite.icon-2 { background-position: -59px 0; height: 40px; } 
-.sprite.icon-1 { background-position: -113px 0; height: 44px; } 
-.sprite.icon { background-position: -167px 0; width: 52px; height: 36px; } 
