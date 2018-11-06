@@ -79,7 +79,7 @@
       align-items: center;
       min-width: 600px;
       margin-top: -$header-height*1.02;
-      font-family: 'Raleway', sans-serif;
+      font-family: $Raleway;
       font-style: normal;
       font-stretch: normal;
       line-height: normal;
@@ -108,7 +108,7 @@
       }
       .slider__central__text{
         display: flex;
-        font-family: Montserrat, sans-serif;
+        font-family: $Montserrat;
         align-content: center;
         justify-content: center;
         font-weight: 300;

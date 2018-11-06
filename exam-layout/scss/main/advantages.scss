@@ -16,7 +16,7 @@
       cursor: pointer;
     }
     .advantages__card__header{
-      font-family: Raleway, sans-serif;
+      font-family: $Raleway;
       font-size: 22px;
       font-weight: 600;
       font-style: normal;
@@ -29,7 +29,7 @@
       margin: 0 auto;
     }
     .advantages__card__text{
-      font-family: Montserrat,sans-serif;
+      font-family: $Montserrat;
       font-size: 14px;
       font-weight: 300;
       font-style: normal;

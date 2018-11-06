@@ -10,7 +10,7 @@
     text-align: left;
     .wordpress-ad__header{
       text-transform: capitalize;
-      font-family: Raleway, sans-serif;
+      font-family: $Raleway;
       font-size: 28px;
       font-weight: normal;
       font-style: normal;
@@ -23,7 +23,7 @@
       }
     }
     .wordpress-ad__text{
-      font-family: Montserrat,sans-serif;
+      font-family: $Montserrat;
       font-size: 18px;
       font-weight: 300;
       font-style: normal;

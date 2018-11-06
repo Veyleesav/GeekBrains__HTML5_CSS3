@@ -21,7 +21,7 @@
       text-align: left;
       margin-left: 30px;
       .mobile-devices__caption__header{
-        font-family: Raleway,sans-serif;
+        font-family: $Raleway;
         font-size: 30px;
         font-weight: 600;
         font-style: normal;
@@ -34,7 +34,7 @@
       }
       .mobile-devices__caption__text{
         width: 660px;
-        font-family: Montserrat,sans-serif;
+        font-family: $Montserrat;
         font-size: 16px;
         font-weight: 300;
         font-style: normal;
@@ -46,7 +46,7 @@
         padding: 0 0 45px 0;
       }
       .mobile-devices__caption__list{
-        font-family: Montserrat,sans-serif;
+        font-family: $Montserrat;
         font-size: 16px;
         font-weight: 300;
         font-style: normal;

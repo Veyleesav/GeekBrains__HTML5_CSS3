@@ -5,6 +5,8 @@ $slider-shift: -$width*3; /* cuz overflow:hidden doesn`t work with positive numb
 $button-color:#998675;
 $button-hover: darken($button-color,10%);
 $button-active: darken($button-color, 20%);
+$Raleway: 'Raleway', 'Helvetica', sans-serif;
+$Montserrat: 'Montserrat','Helvetica', sans-serif;
 @mixin default-button{
   display: flex;
   justify-content: center;

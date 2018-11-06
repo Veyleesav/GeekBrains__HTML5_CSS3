@@ -10,7 +10,7 @@
       fill: #ffffff; }
     .logo .home-link-logo .home-link-logo__logo-text {
       display: flex;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", "Helvetica", sans-serif;
       font-size: 34px;
       font-weight: normal;
       font-style: normal;
@@ -53,7 +53,7 @@
       display: block;
       text-transform: capitalize;
       text-decoration: none;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 14px;
       font-weight: 300;
       font-style: normal;
@@ -134,7 +134,7 @@
     align-items: center;
     min-width: 600px;
     margin-top: -1044.48px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", "Helvetica", sans-serif;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -161,7 +161,7 @@
       margin-top: 0; }
     .slider .slider__central-block .slider__central .slider__central__text {
       display: flex;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       align-content: center;
       justify-content: center;
       font-weight: 300;
@@ -269,7 +269,7 @@ header {
     .advantages .advantages__card:hover {
       cursor: pointer; }
     .advantages .advantages__card .advantages__card__header {
-      font-family: Raleway, sans-serif;
+      font-family: "Raleway", "Helvetica", sans-serif;
       font-size: 22px;
       font-weight: 600;
       font-style: normal;
@@ -281,7 +281,7 @@ header {
       padding: 158px 0 19px 0;
       margin: 0 auto; }
     .advantages .advantages__card .advantages__card__text {
-      font-family: Montserrat,sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 14px;
       font-weight: 300;
       font-style: normal;
@@ -445,7 +445,7 @@ header {
   text-align: center;
   background: #fbfaf8; }
   .realization .realization__header {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", "Helvetica", sans-serif;
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
@@ -456,7 +456,7 @@ header {
     margin: 0 auto;
     padding: 83px 0 24px 0; }
   .realization .realization__text {
-    font-family: Montserrat,sans-serif;
+    font-family: "Montserrat", "Helvetica", sans-serif;
     width: 770px;
     font-size: 16px;
     font-weight: 300;
@@ -525,7 +525,7 @@ header {
     text-align: left; }
     .advertisement .wordpress-ad .wordpress-ad__header {
       text-transform: capitalize;
-      font-family: Raleway, sans-serif;
+      font-family: "Raleway", "Helvetica", sans-serif;
       font-size: 28px;
       font-weight: normal;
       font-style: normal;
@@ -536,7 +536,7 @@ header {
       .advertisement .wordpress-ad .wordpress-ad__header span {
         color: #c7b299; }
     .advertisement .wordpress-ad .wordpress-ad__text {
-      font-family: Montserrat,sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 18px;
       font-weight: 300;
       font-style: normal;
@@ -580,7 +580,7 @@ header {
   text-align: center; }
   .latest-projects .latest-projects__header {
     text-transform: capitalize;
-    font-family: Raleway,sans-serif;
+    font-family: "Raleway", "Helvetica", sans-serif;
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
@@ -697,7 +697,7 @@ header {
         .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption .latest-projects__project__caption__header {
           padding: 30px 0 14px 29px;
           margin: 0 0;
-          font-family: Raleway,sans-serif;
+          font-family: "Raleway", "Helvetica", sans-serif;
           font-size: 20px;
           font-weight: 500;
           font-style: normal;
@@ -708,7 +708,7 @@ header {
         .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption .latest-projects__project__caption__text {
           margin: 0 0;
           padding: 0 0 27px 30px;
-          font-family: Montserrat, sans-serif;
+          font-family: "Montserrat", "Helvetica", sans-serif;
           font-size: 14px;
           font-weight: 300;
           font-style: normal;
@@ -786,7 +786,7 @@ header {
         top: 13px;
         left: 13px; }
     .video .video__overlay .video__overlay__header {
-      font-family: Raleway,sans-serif;
+      font-family: "Raleway", "Helvetica", sans-serif;
       font-size: 30px;
       font-weight: 500;
       font-style: normal;
@@ -800,7 +800,7 @@ header {
       text-transform: capitalize;
       width: 390px; }
     .video .video__overlay .video__overlay__text {
-      font-family: Montserrat,sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 16px;
       font-weight: 300;
       font-style: normal;
@@ -813,7 +813,7 @@ header {
       margin: 0;
       padding: 15px 0 28px 0; }
     .video .video__overlay .video__overlay__length {
-      font-family: Montserrat,sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -854,7 +854,7 @@ header {
       text-align: left;
       margin-left: 30px; }
       .mobile-devices .mobile-devices__wrapper .mobile-devices__caption .mobile-devices__caption__header {
-        font-family: Raleway,sans-serif;
+        font-family: "Raleway", "Helvetica", sans-serif;
         font-size: 30px;
         font-weight: 600;
         font-style: normal;
@@ -866,7 +866,7 @@ header {
         padding: 0 0 40px 0; }
       .mobile-devices .mobile-devices__wrapper .mobile-devices__caption .mobile-devices__caption__text {
         width: 660px;
-        font-family: Montserrat,sans-serif;
+        font-family: "Montserrat", "Helvetica", sans-serif;
         font-size: 16px;
         font-weight: 300;
         font-style: normal;
@@ -877,7 +877,7 @@ header {
         margin: 0 auto;
         padding: 0 0 45px 0; }
       .mobile-devices .mobile-devices__wrapper .mobile-devices__caption .mobile-devices__caption__list {
-        font-family: Montserrat,sans-serif;
+        font-family: "Montserrat", "Helvetica", sans-serif;
         font-size: 16px;
         font-weight: 300;
         font-style: normal;
@@ -983,7 +983,7 @@ header {
       height: 44px;
       background-position: -220px 0; }
     .counter .counter__card .counter__card__number {
-      font-family: Montserrat,sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 48px;
       font-weight: 200;
       font-style: normal;
@@ -994,7 +994,7 @@ header {
       color: #ffffff; }
     .counter .counter__card .counter__card__text {
       text-transform: uppercase;
-      font-family: Montserrat,sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 14px;
       font-weight: 300;
       font-style: normal;

@@ -40,7 +40,7 @@
       }
     }
     .video__overlay__header{
-      font-family: Raleway,sans-serif;
+      font-family: $Raleway;
       font-size: 30px;
       font-weight: 500;
       font-style: normal;
@@ -55,7 +55,7 @@
       width: 390px;
     }
     .video__overlay__text{
-      font-family: Montserrat,sans-serif;
+      font-family: $Montserrat;
       font-size: 16px;
       font-weight: 300;
       font-style: normal;
@@ -69,7 +69,7 @@
       padding:15px 0 28px 0;
     }
     .video__overlay__length{
-      font-family: Montserrat,sans-serif;
+      font-family: $Montserrat;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;

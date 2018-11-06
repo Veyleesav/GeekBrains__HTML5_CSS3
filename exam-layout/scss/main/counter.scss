@@ -62,7 +62,7 @@
 
 
     .counter__card__number{
-      font-family: Montserrat,sans-serif;
+      font-family: $Montserrat;
       font-size: 48px;
       font-weight: 200;
       font-style: normal;
@@ -74,7 +74,7 @@
     }
     .counter__card__text{
       text-transform: uppercase;
-      font-family: Montserrat,sans-serif;
+      font-family: $Montserrat;
       font-size: 14px;
       font-weight: 300;
       font-style: normal;
