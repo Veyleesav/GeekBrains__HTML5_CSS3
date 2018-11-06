@@ -707,7 +707,15 @@ header {
           color: #c7b299; }
         .latest-projects .latest-projects__wrapper .latest-projects__project .latest-projects__project__caption .latest-projects__project__caption__text {
           margin: 0 0;
-          padding: 0 0 27px 30px; }
+          padding: 0 0 27px 30px;
+          font-family: Montserrat, sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          color: #d1d1d1; }
   .latest-projects .latest-projects__load-btn {
     display: flex;
     justify-content: center;
