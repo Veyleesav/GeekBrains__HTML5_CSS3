@@ -1,0 +1,31 @@
+@import "footer-values";
+.footer-info{
+  @include default-block;
+  background-color: #191919;
+  justify-content: center;
+  align-items: center;
+  .footer-info__about{
+    max-width: 270px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .footer-info__about__logo{
+      @include logo;
+    }
+    .footer-info__about__text{
+      font-family: $Montserrat;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: left;
+      color: #555555;
+    }
+    .footer-info__about__read-more{
+      @include read-more;
+    }
+  }
+}
