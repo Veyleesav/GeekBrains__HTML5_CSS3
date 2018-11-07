@@ -1224,7 +1224,7 @@ header {
     padding: 0 0;
     margin: 0 45px 0 45px; }
 
-.footer-info {
+.information {
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -1234,21 +1234,24 @@ header {
   text-align: center;
   background-color: #191919;
   justify-content: center;
-  align-items: center; }
-  .footer-info .footer-info__about {
-    max-width: 270px;
+  align-items: center;
+  min-height: 508px;
+  display: flex; }
+  .information .information__about {
+    padding-right: 42px;
+    width: 270px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center; }
-    .footer-info .footer-info__about .footer-info__about__logo {
+    align-items: flex-start; }
+    .information .information__about .information__about__logo {
       display: flex; }
-      .footer-info .footer-info__about .footer-info__about__logo .home-link-logo {
+      .information .information__about .information__about__logo .home-link-logo {
         display: flex;
         text-decoration: none; }
-        .footer-info .footer-info__about .footer-info__about__logo .home-link-logo .home-link-logo__logo {
+        .information .information__about .information__about__logo .home-link-logo .home-link-logo__logo {
           fill: #ffffff; }
-        .footer-info .footer-info__about .footer-info__about__logo .home-link-logo .home-link-logo__logo-text {
+        .information .information__about .information__about__logo .home-link-logo .home-link-logo__logo-text {
           display: flex;
           font-family: "Raleway", "Helvetica", sans-serif;
           font-size: 34px;
@@ -1259,11 +1262,12 @@ header {
           letter-spacing: -1.4px;
           color: #ffffff;
           align-items: center; }
-      .footer-info .footer-info__about .footer-info__about__logo:hover .home-link-logo__logo-text {
+      .information .information__about .information__about__logo:hover .home-link-logo__logo-text {
         color: #c7b299; }
-      .footer-info .footer-info__about .footer-info__about__logo:hover .home-link-logo__logo {
+      .information .information__about .information__about__logo:hover .home-link-logo__logo {
         fill: #c7b299; }
-    .footer-info .footer-info__about .footer-info__about__text {
+    .information .information__about .information__about__text {
+      max-width: 258px;
       font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 14px;
       font-weight: 300;
@@ -1272,8 +1276,10 @@ header {
       line-height: 1.71;
       letter-spacing: normal;
       text-align: left;
-      color: #555555; }
-    .footer-info .footer-info__about .footer-info__about__read-more {
+      color: #555555;
+      padding: 0 0;
+      margin-bottom: 33px; }
+    .information .information__about .information__about__read-more {
       font-family: "Montserrat", "Helvetica", sans-serif;
       font-size: 14px;
       font-weight: 300;
@@ -1283,14 +1289,15 @@ header {
       letter-spacing: normal;
       text-align: left;
       color: #c7b299;
-      margin: 0 0 0 30px;
       padding: 0 0 0 0;
       text-decoration: none;
       cursor: pointer;
       text-transform: capitalize;
       display: flex;
-      flex-flow: row nowrap; }
-      .footer-info .footer-info__about .footer-info__about__read-more::after {
+      flex-flow: row nowrap;
+      color: #d1d1d1;
+      text-align: left; }
+      .information .information__about .information__about__read-more::after {
         content: '';
         width: 0;
         height: 0;
@@ -1303,8 +1310,168 @@ header {
         position: relative;
         left: 9px;
         margin-top: 2px; }
-      .footer-info .footer-info__about .footer-info__about__read-more:hover {
+      .information .information__about .information__about__read-more:hover {
         border-bottom: 1px solid; }
+      .information .information__about .information__about__read-more::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 5px;
+        border-color: transparent transparent transparent #d1d1d1;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        left: 9px;
+        margin-top: 2px; }
+  .information .information__recent {
+    padding-right: 30px;
+    width: 270px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start; }
+    .information .information__recent .information__recent__header {
+      font-family: "Raleway", "Helvetica", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      text-transform: capitalize;
+      padding: 21.3% 0 0 0;
+      margin: 0 0; }
+    .information .information__recent .information__recent__post {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2.8% 0 0 0;
+      text-decoration: none;
+      max-width: 270px; }
+      .information .information__recent .information__recent__post:hover .information__recent__post__time {
+        color: #ffffff; }
+      .information .information__recent .information__recent__post:hover .information__recent__post__text {
+        color: #c7b299; }
+      .information .information__recent .information__recent__post .information__recent__post__time {
+        font-family: "Montserrat", "Helvetica", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #363636;
+        padding: 3.7% 0 2% 0; }
+      .information .information__recent .information__recent__post .information__recent__post__text {
+        font-family: "Montserrat", "Helvetica", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555; }
+      .information .information__recent .information__recent__post::after {
+        display: block;
+        content: ' ';
+        width: 270px;
+        height: 2px;
+        background-color: #252525; }
+  .information .information__twitter {
+    padding-right: 30px;
+    width: 270px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start; }
+    .information .information__twitter .information__twitter__header {
+      font-family: "Raleway", "Helvetica", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      text-transform: capitalize;
+      padding: 21.3% 0 0 0;
+      margin: 0 0; }
+    .information .information__twitter .information__twitter__post {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2.8% 0 0 0;
+      text-decoration: none; }
+      .information .information__twitter .information__twitter__post:hover .information__twitter__post__time {
+        color: #ffffff; }
+      .information .information__twitter .information__twitter__post:hover .information__twitter__post__text {
+        color: #c7b299; }
+      .information .information__twitter .information__twitter__post .information__twitter__post__time {
+        font-family: "Montserrat", "Helvetica", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #363636;
+        padding: 3.7% 0 2% 0; }
+      .information .information__twitter .information__twitter__post .information__twitter__post__text {
+        font-family: "Montserrat", "Helvetica", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555; }
+      .information .information__twitter .information__twitter__post::after {
+        display: block;
+        content: ' ';
+        width: 270px;
+        height: 2px;
+        background-color: #252525; }
+  .information .information__dribble-widget {
+    width: 280px;
+    display: flex;
+    flex-flow: column nowrap; }
+    .information .information__dribble-widget .information__dribble-widget__header {
+      font-family: "Raleway", "Helvetica", sans-serif;
+      text-transform: capitalize;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      padding: 0;
+      margin: 0; }
+    .information .information__dribble-widget .information__dribble-widget__photo-wrapper {
+      padding-top: 21px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center; }
+      .information .information__dribble-widget .information__dribble-widget__photo-wrapper a {
+        margin: 0 0 -10 0;
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+        text-decoration: none; }
+      .information .information__dribble-widget .information__dribble-widget__photo-wrapper .information__dribble-widget__photo {
+        margin: 5px 5px 0 5px; }
 
 /* > FONTS > */
 @font-face {

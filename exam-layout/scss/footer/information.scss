@@ -1,19 +1,23 @@
 @import "footer-values";
-.footer-info{
+.information{
   @include default-block;
   background-color: #191919;
   justify-content: center;
   align-items: center;
-  .footer-info__about{
-    max-width: 270px;
+  min-height: 508px;
+  display: flex;
+  .information__about{
+    padding-right:42px;
+    width: 270px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
-    .footer-info__about__logo{
+    align-items: flex-start;
+    .information__about__logo{
       @include logo;
     }
-    .footer-info__about__text{
+    .information__about__text{
+      max-width: 258px;
       font-family: $Montserrat;
       font-size: 14px;
       font-weight: 300;
@@ -23,9 +27,205 @@
       letter-spacing: normal;
       text-align: left;
       color: #555555;
+      padding: 0 0;
+      margin-bottom:33px;
     }
-    .footer-info__about__read-more{
+    .information__about__read-more{
       @include read-more;
+      color: #d1d1d1;
+      text-align: left;
+      &::after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 5px;
+        border-color: transparent transparent transparent #d1d1d1;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        left:9px;
+        margin-top:2px;
+      }
+    }
+  }
+  .information__recent{
+    padding-right:30px;
+      width: 270px ;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      .information__recent__header{
+        font-family: $Raleway;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        text-transform: capitalize;
+        padding:21.3% 0 0 0;
+        margin: 0 0;
+      }
+      .information__recent__post{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2.8% 0 0 0;
+        text-decoration: none;
+        max-width: 270px;
+        &:hover{
+          .information__recent__post__time{
+            color: #ffffff;
+          }
+          .information__recent__post__text{
+            color: #c7b299;
+          }
+
+        }
+
+        .information__recent__post__time{
+          font-family: $Montserrat;
+          font-size: 12px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.67;
+          letter-spacing: normal;
+          text-align: left;
+          color: #363636;
+          padding: 3.7% 0 2% 0;
+        }
+        .information__recent__post__text{
+          font-family: $Montserrat;
+          font-size: 14px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          text-align: left;
+          color: #555555;
+        }
+        &::after{
+          display: block;
+          content:' ';
+          width: 270px;
+          height: 2px;
+          background-color: #252525;
+        }
+      }
+    }
+  .information__twitter{
+    padding-right:30px;
+    width: 270px ;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    .information__twitter__header{
+      font-family: $Raleway;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      text-transform: capitalize;
+      padding:21.3% 0 0 0;
+      margin: 0 0;
+    }
+    .information__twitter__post{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2.8% 0 0 0;
+      text-decoration: none;
+      &:hover{
+        .information__twitter__post__time{
+          color: #ffffff;
+        }
+        .information__twitter__post__text{
+          color: #c7b299;
+        }
+
+      }
+
+      .information__twitter__post__time{
+        font-family: $Montserrat;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #363636;
+        padding: 3.7% 0 2% 0;
+      }
+      .information__twitter__post__text{
+        font-family: $Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+      }
+      &::after{
+        display: block;
+        content:' ';
+        width: 270px;
+        height: 2px;
+        background-color: #252525;
+      }
+    }
+  }
+  .information__dribble-widget{
+    width: 280px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .information__dribble-widget__header{
+      font-family: $Raleway;
+      text-transform: capitalize;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      padding: 0;
+      margin: 0;
+  }
+    .information__dribble-widget__photo-wrapper{
+      padding-top: 21px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      a{
+        margin: 0 0 -10 0;
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      .information__dribble-widget__photo{
+        margin: 5px 5px 0 5px;
+
+      }
     }
   }
 }
