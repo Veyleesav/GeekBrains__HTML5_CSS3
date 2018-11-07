@@ -39,7 +39,13 @@
   src: url(../fonts/Montserrat/Montserrat-Light.ttf);
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
 
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /* ^ FONTS ^ */
 $width:1920px;
 body{
