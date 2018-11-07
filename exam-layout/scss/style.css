@@ -1188,7 +1188,8 @@ header {
           left: 9px;
           margin-top: 2px; }
         .recent-posts .recent-posts__article-wrapper .recent-posts__article .recent-posts__article__read-more:hover {
-          border-bottom: 1px solid; }
+          border-bottom: 1px solid;
+          margin-bottom: -1px; }
   .recent-posts .recent-posts__article__radio-buttons {
     padding: 0 0 80px 0;
     /* IMAGE STYLES */
@@ -1311,7 +1312,8 @@ header {
         left: 9px;
         margin-top: 2px; }
       .information .information__about .information__about__read-more:hover {
-        border-bottom: 1px solid; }
+        border-bottom: 1px solid;
+        margin-bottom: -1px; }
       .information .information__about .information__about__read-more::after {
         content: '';
         width: 0;
