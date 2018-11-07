@@ -1189,6 +1189,40 @@ header {
           margin-top: 2px; }
         .recent-posts .recent-posts__article-wrapper .recent-posts__article .recent-posts__article__read-more:hover {
           border-bottom: 1px solid; }
+  .recent-posts .recent-posts__article__radio-buttons {
+    padding: 0 0 80px 0;
+    /* IMAGE STYLES */
+    /* CHECKED STYLES */ }
+    .recent-posts .recent-posts__article__radio-buttons .recent-posts__article__radio-buttons__right {
+      transform: rotate(180deg); }
+    .recent-posts .recent-posts__article__radio-buttons [type=radio] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    .recent-posts .recent-posts__article__radio-buttons [type=radio] + img {
+      cursor: pointer;
+      margin: 0 4px 0 4px; }
+    .recent-posts .recent-posts__article__radio-buttons [type=radio]:checked + img {
+      content: url("../img/main/recent-posts/arrow-left.png");
+      cursor: default; }
+
+.partners {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  max-width: 1920px;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/main/partners/partners__bg.jpg");
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 489px; }
+  .partners .partners-logo {
+    padding: 0 0;
+    margin: 0 45px 0 45px; }
 
 /* > FONTS > */
 @font-face {

@@ -184,4 +184,29 @@
       }
     }
   }
+  .recent-posts__article__radio-buttons{
+    padding: 0 0 80px 0;
+    .recent-posts__article__radio-buttons__right{
+      transform: rotate(180deg);
+    }
+    [type=radio] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* IMAGE STYLES */
+    [type=radio] + img {
+      cursor: pointer;
+      margin: 0 4px 0 4px;
+    }
+
+    /* CHECKED STYLES */
+    [type=radio]:checked + img {
+      content: url("../img/main/recent-posts/arrow-left.png");
+      cursor: default;
+    }
+
+  }
 }

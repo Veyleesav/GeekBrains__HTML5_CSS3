@@ -1,0 +1,13 @@
+@import "main__values";
+.partners{
+  @include default-block;
+  background:linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/main/partners/partners__bg.jpg");
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 489px;
+  .partners-logo{
+    padding: 0 0;
+    margin: 0 45px 0 45px;
+  }
+}
