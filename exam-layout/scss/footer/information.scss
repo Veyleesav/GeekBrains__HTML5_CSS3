@@ -181,6 +181,18 @@
         letter-spacing: normal;
         text-align: left;
         color: #555555;
+        .tag{
+          color:#00bff3;
+          cursor: pointer;
+        }
+        a{
+          text-decoration: none;
+          color:#959595;
+          &:hover{
+            border-bottom: 1px solid;
+            margin-bottom: -1px;
+          }
+        }
       }
       &::after{
         display: block;
