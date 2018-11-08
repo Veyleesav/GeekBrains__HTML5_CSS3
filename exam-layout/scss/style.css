@@ -1484,6 +1484,72 @@ header {
       .information .information__dribble-widget .information__dribble-widget__photo-wrapper .information__dribble-widget__photo {
         margin: 5px 5px 0 5px; }
 
+.lower-footer {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  max-width: 1920px;
+  flex-flow: row nowrap;
+  align-items: center;
+  text-align: center;
+  background: #111111;
+  min-height: 111px;
+  justify-content: space-around; }
+  .lower-footer .lower-footer__left {
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #555555;
+    display: flex;
+    flex-flow: row nowrap; }
+    .lower-footer .lower-footer__left span {
+      color: #959595; }
+    .lower-footer .lower-footer__left .lower-footer__left__link {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #555555;
+      display: flex;
+      flex-flow: row nowrap; }
+      .lower-footer .lower-footer__left .lower-footer__left__link::before {
+        content: '';
+        display: block;
+        height: 13px;
+        width: 1px;
+        background: #555555;
+        margin: auto 10px auto 10px; }
+      .lower-footer .lower-footer__left .lower-footer__left__link:hover {
+        color: #c7b299; }
+  .lower-footer .lower-footer__right {
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #555555;
+    display: flex;
+    flex-flow: row nowrap; }
+    .lower-footer .lower-footer__right .lower-footer__right__link {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #959595;
+      display: flex;
+      flex-flow: row nowrap; }
+      .lower-footer .lower-footer__right .lower-footer__right__link:hover {
+        color: #c7b299; }
+    .lower-footer .lower-footer__right .lower-footer__right__link-first::after {
+      content: '';
+      display: block;
+      height: 13px;
+      width: 1px;
+      background: #555555;
+      margin: auto 10px auto 10px; }
+
 /* > FONTS > */
 @font-face {
   font-family: Raleway;
