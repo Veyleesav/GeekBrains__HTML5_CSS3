@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 .logo {
+  z-index: 1;
   display: flex; }
   .logo .home-link-logo {
     display: flex;
@@ -12,12 +13,12 @@
     .logo .home-link-logo .home-link-logo__logo-text {
       display: flex;
       font-family: "Raleway", "Helvetica", sans-serif;
-      font-size: 34px;
+      font-size: 2em;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
       line-height: normal;
-      letter-spacing: -1.4px;
+      letter-spacing: -0.001em;
       color: #ffffff;
       align-items: center; }
   .logo:hover .home-link-logo__logo-text {
@@ -27,35 +28,36 @@
 
 /* cuz overflow:hidden doesn`t work with positive number*/
 .header-top__menu {
+  z-index: 1;
   display: flex;
-  margin-left: -175px;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center; }
   .header-top__menu .header-top__menu__navigation-icons {
     display: flex;
-    margin-left: 30px; }
+    margin-left: 1em; }
     .header-top__menu .header-top__menu__navigation-icons .header-top__menu__navigation-icon-wrapper {
       text-decoration: none;
       display: block; }
     .header-top__menu .header-top__menu__navigation-icons .header-top__menu__navigation-icons__icon {
       fill: #ffffff;
-      margin: 0 14px; }
+      margin: 0 1em; }
       .header-top__menu .header-top__menu__navigation-icons .header-top__menu__navigation-icons__icon:hover {
         fill: #c7b299;
         cursor: pointer; }
 
 .menu__list {
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row wrap; }
   .menu__list .menu__list__link {
     list-style-type: none;
-    margin: 0 15px 0 15px; }
+    margin: 0 1em 0 1em; }
     .menu__list .menu__list__link a {
       display: block;
       text-transform: capitalize;
       text-decoration: none;
       font-family: "Montserrat", "Helvetica", sans-serif;
-      font-size: 14px;
+      font-size: 0.9em;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
@@ -68,201 +70,211 @@
       cursor: pointer; }
 
 /* cuz overflow:hidden doesn`t work with positive number*/
-.slider .slider__bg {
-  z-index: 0;
-  max-width: 1920px;
-  height: 1024px;
-  background-size: 1920px, 1024px;
-  margin-top: -96px;
-  overflow-x: hidden; }
-.slider #slider__bg-1 {
-  box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-1.jpg");
-  transform: translateX(-5760px); }
-.slider #slider__bg-2 {
-  box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-2.jpg") no-repeat;
-  margin-top: -1024px; }
-.slider #slider__bg-3 {
-  box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-3.jpg") no-repeat;
-  margin-top: -1024px;
-  transform: translateX(-5760px); }
-.slider #slider__bg-4 {
-  box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-4.jpg") no-repeat;
-  margin-top: -1024px;
-  transform: translateX(-5760px); }
-.slider #slider__bg-5 {
-  box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-5.jpg") no-repeat;
-  margin-top: -1024px;
-  transform: translateX(-5760px); }
-.slider .slider__central-block {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 1920px;
-  height: 0; }
-  .slider .slider__central-block .slider__arrow {
-    width: 50px;
-    height: 50px;
-    border-width: 3px 3px 0 0;
-    border-style: solid;
-    margin: 10px;
-    color: #ffffff;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
+.slider {
+  width: 100%;
+  position: absolute;
+  top: 0; }
+  .slider .slider__bg {
+    z-index: 0;
+    width: 100%;
+    max-width: 1920px;
+    height: 1024px;
+    background-size: cover;
+    overflow-x: hidden; }
+  .slider #slider__bg-1 {
     box-sizing: border-box;
-    opacity: 0.5; }
-  .slider .slider__central-block .slider__arrow-left {
-    transform: rotate(-135deg);
-    top: -550px; }
-    .slider .slider__central-block .slider__arrow-left:hover {
-      cursor: pointer;
-      color: #d3c1ad; }
-  .slider .slider__central-block .slider__arrow-right {
-    transform: rotate(45deg);
-    top: -550px; }
-    .slider .slider__central-block .slider__arrow-right:hover {
-      cursor: pointer;
-      color: #d3c1ad; }
-  .slider .slider__central-block .slider__central {
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-1.jpg");
+    transform: translateX(-5760px); }
+  .slider #slider__bg-2 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-2.jpg") no-repeat;
+    margin-top: -1024px; }
+  .slider #slider__bg-3 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-3.jpg") no-repeat;
+    margin-top: -1024px;
+    transform: translateX(-5760px); }
+  .slider #slider__bg-4 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-4.jpg") no-repeat;
+    margin-top: -1024px;
+    transform: translateX(-5760px); }
+  .slider #slider__bg-5 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-5.jpg") no-repeat;
+    margin-top: -1024px;
+    transform: translateX(-5760px); }
+  .slider .slider__central-block {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-width: 600px;
-    margin-top: -1044.48px;
-    font-family: "Raleway", "Helvetica", sans-serif;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    width: 600px; }
-    .slider .slider__central-block .slider__central .slider__central__subheader {
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1920px;
+    height: 0; }
+    .slider .slider__central-block .slider__arrow {
+      width: 3em;
+      height: 3em;
+      border-width: 0.1em 0.1em 0 0;
+      border-style: solid;
+      margin: 0.3em;
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      opacity: 0.5; }
+    .slider .slider__central-block .slider__arrow-left {
+      margin-top: -550px;
+      transform: rotate(-135deg); }
+      .slider .slider__central-block .slider__arrow-left:hover {
+        cursor: pointer;
+        color: #d3c1ad; }
+    .slider .slider__central-block .slider__arrow-right {
+      transform: rotate(45deg);
+      top: -550px; }
+      .slider .slider__central-block .slider__arrow-right:hover {
+        cursor: pointer;
+        color: #d3c1ad; }
+    .slider .slider__central-block .slider__central {
       display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
       align-content: center;
-      justify-content: center;
-      font-weight: 500;
-      font-size: 36px;
-      width: 462px;
-      margin-bottom: 0; }
-    .slider .slider__central-block .slider__central .slider__central__header {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 52px;
-      width: 590px;
-      margin-bottom: 4px;
-      margin-top: 0; }
-    .slider .slider__central-block .slider__central .slider__central__text {
-      display: flex;
-      font-family: "Montserrat", "Helvetica", sans-serif;
-      align-content: center;
-      justify-content: center;
-      font-weight: 300;
-      line-height: 1.5;
-      font-size: 16px;
-      width: 585px; }
-    .slider .slider__central-block .slider__central .slider__central__button {
-      display: flex;
-      justify-content: center;
       align-items: center;
-      text-decoration: none;
-      width: 170px;
-      min-height: 50px;
-      border-radius: 3px;
-      box-shadow: inset 0px -3px 0 0 #736357;
-      background-color: #998675;
-      text-transform: uppercase;
-      font-family: Raleway,sans-serif;
-      font-size: 14px;
-      font-weight: 800;
+      min-width: 600px;
+      margin-top: -1044.48px;
+      font-family: "Raleway", "Helvetica", sans-serif;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.64;
+      line-height: normal;
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
-      margin-top: 35px;
-      min-height: 53px; }
-      .slider .slider__central-block .slider__central .slider__central__button:hover {
-        background-color: #7e6d5d; }
-      .slider .slider__central-block .slider__central .slider__central__button:active {
-        background-color: #615347;
-        box-shadow: none; }
-.slider .slider__radio-buttons {
-  display: flex;
-  z-index: 1;
-  margin-top: -42px;
-  justify-content: center;
-  /* The container */
-  /* Hide the browser's default radio button */
-  /* Create a custom radio button */
-  /* On mouse-over*/
-  /* When the radio button is checked, add a blue background */ }
-  .slider .slider__radio-buttons .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
-  .slider .slider__radio-buttons .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer; }
-  .slider .slider__radio-buttons .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 11px;
-    width: 11px;
-    background-color: #ffffff;
-    opacity: 0.5;
-    border-radius: 50%; }
-  .slider .slider__radio-buttons .container:hover input ~ .checkmark {
-    background-color: #c7b299; }
-  .slider .slider__radio-buttons .container input:checked ~ .checkmark {
-    background-color: transparent;
-    margin: -2px -2px;
-    border: solid 2px #d3c1ad; }
+      width: 600px; }
+      .slider .slider__central-block .slider__central .slider__central__subheader {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 36px;
+        width: 462px;
+        margin-bottom: 0; }
+      .slider .slider__central-block .slider__central .slider__central__header {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 52px;
+        width: 590px;
+        margin-bottom: 4px;
+        margin-top: 0; }
+      .slider .slider__central-block .slider__central .slider__central__text {
+        display: flex;
+        font-family: "Montserrat", "Helvetica", sans-serif;
+        align-content: center;
+        justify-content: center;
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 16px;
+        width: 585px; }
+      .slider .slider__central-block .slider__central .slider__central__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 170px;
+        min-height: 50px;
+        border-radius: 3px;
+        box-shadow: inset 0px -3px 0 0 #736357;
+        background-color: #998675;
+        text-transform: uppercase;
+        font-family: Raleway,sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.64;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 35px;
+        min-height: 53px; }
+        .slider .slider__central-block .slider__central .slider__central__button:hover {
+          background-color: #7e6d5d; }
+        .slider .slider__central-block .slider__central .slider__central__button:active {
+          background-color: #615347;
+          box-shadow: none; }
+  .slider .slider__radio-buttons {
+    display: flex;
+    z-index: 1;
+    margin-top: -42px;
+    justify-content: center;
+    /* The container */
+    /* Hide the browser's default radio button */
+    /* Create a custom radio button */
+    /* On mouse-over*/
+    /* When the radio button is checked, add a blue background */ }
+    .slider .slider__radio-buttons .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .slider .slider__radio-buttons .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    .slider .slider__radio-buttons .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 11px;
+      width: 11px;
+      background-color: #ffffff;
+      opacity: 0.5;
+      border-radius: 50%; }
+    .slider .slider__radio-buttons .container:hover input ~ .checkmark {
+      background-color: #c7b299; }
+    .slider .slider__radio-buttons .container input:checked ~ .checkmark {
+      background-color: transparent;
+      margin: -2px -2px;
+      border: solid 2px #d3c1ad; }
 
 /* cuz overflow:hidden doesn`t work with positive number*/
 header {
+  width: 100%;
   max-width: 1920px;
   height: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .header-top {
   z-index: 1;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-  padding-top: 40px; }
+  align-items: flex-end;
+  min-height: 9.4%; }
 
 .advantages {
   margin: 0 auto;
   padding: 0;
   display: flex;
+  width: 100%;
   max-width: 1920px;
   justify-content: center;
-  min-height: 373px; }
+  min-height: 373px;
+  flex-flow: row wrap; }
   .advantages .advantages__card {
     position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
-    width: 270px;
+    max-width: 270px;
     margin: 0 16.5px 0 16.5px;
     text-align: center;
     /* icons */
@@ -1209,6 +1221,10 @@ header {
     padding: 0 0;
     margin: 0 45px 0 45px; }
 
+main {
+  width: 100%;
+  max-width: 1920px; }
+
 .information {
   margin: 0 auto;
   padding: 0;
@@ -1569,8 +1585,8 @@ header {
   src: url(../fonts/Roboto/Roboto-Regular.ttf); }
 /* ^ FONTS ^ */
 body {
-  width: 100%;
-  margin: 0;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

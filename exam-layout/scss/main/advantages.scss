@@ -1,15 +1,17 @@
 @import "main__values";
 .advantages{
   @include centring-flex;
+  width: 100%;
   max-width: $width;
   justify-content: center;
   min-height:373px;
+  flex-flow:row wrap;
   .advantages__card{
     position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
-    width: 270px;
+    max-width: 270px;
     margin: 0 16.5px 0 16.5px;
     text-align: center;
     &:hover{

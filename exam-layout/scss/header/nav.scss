@@ -1,19 +1,20 @@
 @import "header__values";
 .header-top__menu{
+  z-index:1;
   display: flex;
-  margin-left: -175px;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   .header-top__menu__navigation-icons{
     display: flex;
-    margin-left: 30px;
+    margin-left: 1em;
     .header-top__menu__navigation-icon-wrapper{
       text-decoration: none;
       display: block;
     }
     .header-top__menu__navigation-icons__icon{
       fill: #ffffff;
-      margin: 0 14px;
+      margin: 0 1em;
       &:hover{
         fill: $menu-hover-color;;
         cursor: pointer;
@@ -23,16 +24,16 @@
 }
 .menu__list{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   .menu__list__link{
     list-style-type:none ;
-    margin: 0 15px 0 15px;
+    margin: 0 1em 0 1em;
     a{
       display: block;
       text-transform: capitalize;
       text-decoration: none;
       font-family: $Montserrat;
-      font-size: 14px;
+      font-size: 0.9em;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
