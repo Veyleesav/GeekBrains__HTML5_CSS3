@@ -1,11 +1,11 @@
 @import "header__values";
 .slider{
-  width: 100%;
+  width: 100vw;
   position: absolute;
   top:0;
   .slider__bg{
     z-index:0;
-    width: 100%;
+    width: 100vw;
     max-width: $width;
     height: $header-height;
     background-size:cover ;
@@ -42,15 +42,15 @@
   .slider__central-block{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     max-width: $width;
     height: 0;
     .slider__arrow{
       width: 3em;
       height: 3em;
-      border-width: 0.1em 0.1em 0 0;
+      border-width: 0.25vh 0.25vh 0 0;
       border-style: solid;
-      margin: 0.3em;
+      margin: 0.3vw;
       color: #ffffff;
       position: relative;
       display: inline-block;
@@ -59,7 +59,7 @@
       opacity: 0.5;
     }
     .slider__arrow-left{
-      margin-top: -550px;
+      margin-top: -50vh;
       transform: rotate(-135deg);
       &:hover{
         cursor:pointer;
@@ -68,7 +68,7 @@
     }
     .slider__arrow-right{
       transform: rotate(45deg);
-      top:-550px;
+      top:-50vh;
       &:hover{
         cursor:pointer;
         color: #d3c1ad;
@@ -80,7 +80,7 @@
       justify-content: center;
       align-content: center;
       align-items: center;
-      min-width: 600px;
+      min-width: 30vw;
       margin-top: -$header-height*1.02;
       font-family: $Raleway;
       font-style: normal;
@@ -89,14 +89,14 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
-      width: 600px;
+      width: 31%;
       .slider__central__subheader{
         display: flex;
         align-content: center;
         justify-content: center;
         font-weight: 500;
-        font-size: 36px;
-        width: 462px;
+        font-size: 2.2em;
+        width: 77%;
         margin-bottom: 0;
       }
       .slider__central__header{
@@ -104,8 +104,8 @@
         align-content: center;
         justify-content: center;
         font-weight: 800;
-        font-size: 52px;
-        width: 590px;
+        font-size: 3.3em;
+        width: 100%;
         margin-bottom: 4px;
         margin-top: 0;
       }
@@ -117,7 +117,7 @@
         font-weight: 300;
         line-height: 1.5;
         font-size: 16px;
-        width: 585px;
+        width: 99%;
       }
       .slider__central__button{
         @include default-button;

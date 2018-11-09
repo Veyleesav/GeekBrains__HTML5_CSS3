@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 header{
-  width: 100%;
+  width: 100vw;
   max-width: $width;
   height: $header-height;
   @include centring;

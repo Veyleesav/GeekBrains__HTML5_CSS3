@@ -13,7 +13,7 @@
     .logo .home-link-logo .home-link-logo__logo-text {
       display: flex;
       font-family: "Raleway", "Helvetica", sans-serif;
-      font-size: 2em;
+      font-size: 3vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -35,13 +35,13 @@
   align-items: center; }
   .header-top__menu .header-top__menu__navigation-icons {
     display: flex;
-    margin-left: 1em; }
+    margin-left: 2vw; }
     .header-top__menu .header-top__menu__navigation-icons .header-top__menu__navigation-icon-wrapper {
       text-decoration: none;
       display: block; }
     .header-top__menu .header-top__menu__navigation-icons .header-top__menu__navigation-icons__icon {
       fill: #ffffff;
-      margin: 0 1em; }
+      margin: 0 1vw; }
       .header-top__menu .header-top__menu__navigation-icons .header-top__menu__navigation-icons__icon:hover {
         fill: #c7b299;
         cursor: pointer; }
@@ -51,13 +51,13 @@
   flex-flow: row wrap; }
   .menu__list .menu__list__link {
     list-style-type: none;
-    margin: 0 1em 0 1em; }
+    margin: 0 1vw 0 1vw; }
     .menu__list .menu__list__link a {
       display: block;
       text-transform: capitalize;
       text-decoration: none;
       font-family: "Montserrat", "Helvetica", sans-serif;
-      font-size: 0.9em;
+      font-size: 1.4vh;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
@@ -71,12 +71,12 @@
 
 /* cuz overflow:hidden doesn`t work with positive number*/
 .slider {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   top: 0; }
   .slider .slider__bg {
     z-index: 0;
-    width: 100%;
+    width: 100vw;
     max-width: 1920px;
     height: 1024px;
     background-size: cover;
@@ -107,15 +107,15 @@
   .slider .slider__central-block {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     max-width: 1920px;
     height: 0; }
     .slider .slider__central-block .slider__arrow {
       width: 3em;
       height: 3em;
-      border-width: 0.1em 0.1em 0 0;
+      border-width: 0.25vh 0.25vh 0 0;
       border-style: solid;
-      margin: 0.3em;
+      margin: 0.3vw;
       color: #ffffff;
       position: relative;
       display: inline-block;
@@ -123,14 +123,14 @@
       box-sizing: border-box;
       opacity: 0.5; }
     .slider .slider__central-block .slider__arrow-left {
-      margin-top: -550px;
+      margin-top: -50vh;
       transform: rotate(-135deg); }
       .slider .slider__central-block .slider__arrow-left:hover {
         cursor: pointer;
         color: #d3c1ad; }
     .slider .slider__central-block .slider__arrow-right {
       transform: rotate(45deg);
-      top: -550px; }
+      top: -50vh; }
       .slider .slider__central-block .slider__arrow-right:hover {
         cursor: pointer;
         color: #d3c1ad; }
@@ -140,7 +140,7 @@
       justify-content: center;
       align-content: center;
       align-items: center;
-      min-width: 600px;
+      min-width: 30vw;
       margin-top: -1044.48px;
       font-family: "Raleway", "Helvetica", sans-serif;
       font-style: normal;
@@ -149,22 +149,22 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
-      width: 600px; }
+      width: 31%; }
       .slider .slider__central-block .slider__central .slider__central__subheader {
         display: flex;
         align-content: center;
         justify-content: center;
         font-weight: 500;
-        font-size: 36px;
-        width: 462px;
+        font-size: 2.2em;
+        width: 77%;
         margin-bottom: 0; }
       .slider .slider__central-block .slider__central .slider__central__header {
         display: flex;
         align-content: center;
         justify-content: center;
         font-weight: 800;
-        font-size: 52px;
-        width: 590px;
+        font-size: 3.3em;
+        width: 100%;
         margin-bottom: 4px;
         margin-top: 0; }
       .slider .slider__central-block .slider__central .slider__central__text {
@@ -175,7 +175,7 @@
         font-weight: 300;
         line-height: 1.5;
         font-size: 16px;
-        width: 585px; }
+        width: 99%; }
       .slider .slider__central-block .slider__central .slider__central__button {
         display: flex;
         justify-content: center;
@@ -246,7 +246,7 @@
 
 /* cuz overflow:hidden doesn`t work with positive number*/
 header {
-  width: 100%;
+  width: 100vw;
   max-width: 1920px;
   height: 1024px;
   margin: 0 auto;
@@ -1222,7 +1222,7 @@ header {
     margin: 0 45px 0 45px; }
 
 main {
-  width: 100%;
+  width: 100vw;
   max-width: 1920px; }
 
 .information {
@@ -1550,6 +1550,10 @@ main {
       background: #555555;
       margin: auto 10px auto 10px; }
 
+footer {
+  width: 100vw;
+  max-width: 1920px; }
+
 /* > FONTS > */
 @font-face {
   font-family: Raleway;
@@ -1585,7 +1589,8 @@ main {
   src: url(../fonts/Roboto/Roboto-Regular.ttf); }
 /* ^ FONTS ^ */
 body {
-  max-width: 100%;
+  width: 100vw;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0; }
 
