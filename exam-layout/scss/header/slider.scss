@@ -116,13 +116,13 @@
         justify-content: center;
         font-weight: 300;
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 1em;
         width: 99%;
       }
       .slider__central__button{
         @include default-button;
-        margin-top: 35px;
-        min-height: 53px;
+        margin-top: 2vh;
+        min-height: 5vh;
 
       }
     }
@@ -130,16 +130,19 @@
   .slider__radio-buttons{
     display: flex;
     z-index:1;
-    margin-top: -42px ;
+    margin-top: -4vh ;
     justify-content: center;
+    align-items: center;
     /* The container */
     .container {
+      align-self: center;
+      justify-self: center;
       display: block;
       position: relative;
       padding-left: 35px;
       margin-bottom: 12px;
       cursor: pointer;
-      font-size: 22px;
+      font-size: 3em;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;

@@ -1,7 +1,7 @@
 @import "main__values";
 .advantages{
   @include centring-flex;
-  width: 100%;
+  width: 100vw;
   max-width: $width;
   justify-content: center;
   min-height:373px;

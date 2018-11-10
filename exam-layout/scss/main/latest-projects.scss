@@ -17,7 +17,8 @@
   }
   .latest-projects__text{
     font-family: Montserrat,sans-serif;
-    width: 770px;
+    width: 80vw;
+    max-width: 770px;
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -34,7 +35,7 @@
     .latest-projects__menu__button{
       outline: none;
       text-transform: capitalize;
-      width: 120px;
+      min-width: 120px;
       min-height: 32px;
       border-radius: 3px;
       background-color: #ebebeb;
@@ -48,6 +49,7 @@
       text-align: center;
       color: #8c8c8c;
       border-color: transparent;
+      margin-bottom: 2vh ;
       &:hover{
         background-color: #998675;
         color: #ffffff;
@@ -55,17 +57,19 @@
       }
 
       &:nth-child(1){
-        width: 70px;
+        min-width: 70px;
       }
       &:nth-child(5){
-        width: 135px;
+        min-width: 135px;
       }
     }
   }
   .latest-projects__wrapper{
+    margin-top: -2vh;
     display: flex;
     flex-flow: row wrap;
-    width: 1200px;
+    width: 100vw;
+    max-width: 1200px;
     .latest-projects__project{
       padding: 0 0;
       margin: 0 15px 30px 15px ;
@@ -95,16 +99,19 @@
         }
       }
       .latest-projects__project__img{
-        width: 370px;
-        height: 237px;
+        width: 93vw;
+        max-width: 370px;
+        max-height: 237px;
         margin: 0;
         padding: 0;
       }
       .latest-projects__project__modal{
         z-index:5;
         position: absolute;
-        width: 370px;
+        width: 93vw;
         height: 237px;
+        max-width: 370px;
+        max-height: 237px;
         align-items: center;
         justify-content: center;
         top:0;
