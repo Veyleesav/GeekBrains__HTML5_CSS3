@@ -1,5 +1,7 @@
 @import "footer-values";
 .lower-footer{
+  width: 100vw;
+  max-width: $width;
   @include default-block;
   background: #111111;
   min-height: 111px;
@@ -14,7 +16,7 @@
     letter-spacing: normal;
     color: #555555;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     span{
       color: #959595;
     }
@@ -23,7 +25,7 @@
       text-decoration: none;
       color: #555555;
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
 
       &::before{
         content: '';
@@ -48,7 +50,7 @@
     letter-spacing: normal;
     color: #555555;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     .lower-footer__right__link{
       text-transform: capitalize;
       text-decoration: none;
@@ -67,6 +69,85 @@
         width: 1px;
         background:#555555;
         margin: auto 10px auto 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px)
+{
+  .lower-footer{
+    width: 100vw;
+    max-width: $width;
+    @include default-block;
+    background: #111111;
+    min-height: 111px;
+    justify-content: space-around;
+    .lower-footer__left{
+      margin-left: 5vw;
+      font-family: $Montserrat;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: normal;
+      color: #555555;
+      display: flex;
+      flex-flow: row wrap;
+      span{
+        color: #959595;
+      }
+      .lower-footer__left__link{
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #555555;
+        display: flex;
+        flex-flow: row wrap;
+
+        &::before{
+          content: '';
+          display: block;
+          height: 13px;
+          width: 1px;
+          background:#555555;
+          margin: auto 10px auto 10px;
+        }
+        &:hover{
+          color: #c7b299;
+        }
+      }
+    }
+    .lower-footer__right{
+      margin-right: 5vw;
+      font-family: $Montserrat;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: normal;
+      color: #555555;
+      display: flex;
+      flex-flow: row wrap;
+      .lower-footer__right__link{
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #959595;
+        display: flex;
+        flex-flow: row nowrap;
+        &:hover{
+          color: #c7b299;
+        }
+      }
+      .lower-footer__right__link-first{
+        &::after{
+          content: '';
+          display: block;
+          height: 13px;
+          width: 1px;
+          background:#555555;
+          margin: auto 10px auto 10px;
+        }
       }
     }
   }

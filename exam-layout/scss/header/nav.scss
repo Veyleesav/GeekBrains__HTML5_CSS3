@@ -1,4 +1,7 @@
 @import "header__values";
+.header-top__mobile-menu{
+  display: none;
+}
 .header-top__menu{
   z-index:1;
   display: flex;
@@ -18,6 +21,35 @@
       &:hover{
         fill: $menu-hover-color;;
         cursor: pointer;
+      }
+    }
+    .header-top__menu__navigation-icons__icon__search{
+      width: 24px;
+      height: 24px;
+      outline: none;
+      background: transparent url('../img/header/nav/header__search-icon.svg');
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      color:transparent;
+      &:hover{
+        background: transparent url('../img/header/nav/header__search-icon-hover.svg');
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:focus{
+        color: #ffffff;
+        border-bottom: 1px solid $menu-hover-color;
+        margin-top: 1px;
+        width: 20vw;
+        -webkit-transition: width 1s ease-out;
+        -moz-transition: width 1s ease-out;
+        -ms-transition: width 1s ease-out;
+        -o-transition: width 1s ease-out;
+        transition: width 1s ease-out;
+        background-position: right;
       }
     }
   }
@@ -47,5 +79,139 @@
       cursor: pointer;
     }
 
+  }
+}
+@media screen and (max-width: 800px)
+{
+  .header-top{
+    max-height: 10vh;
+    .logo {
+      z-index: 1;
+      display: flex;
+      align-self: center;
+      justify-self: flex-end;
+      position: fixed;
+      left: 68vw;
+    }
+  .header-top__menu {
+    visibility: hidden;
+  }
+  .header-top__mobile-menu{
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    order:2;
+  }
+  @keyframes checked-anim {
+    50% {
+      width:100vw;
+      height: 100vh;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+  @keyframes not-checked-anim {
+    0% {
+      width:100vw;
+      height: 100vh;
+    }
+  }
+  #menu{
+    margin-top: 20vh;
+  }
+  #menu li, a {
+    width: 100vw;
+    font: $Montserrat;
+    list-style: none;
+    outline: 0;
+    display: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  #menu li {
+    padding: 1vh 0 1vh 0;
+    width: 100vw;
+    text-indent: 56px;}
+  #menu a:focus {
+    display: block;
+    color: #333;
+    background-color: #ffffff;
+    transition: all .5s;
+  }
+  #trigger, #burger, #burger:before, #burger:after {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #ffffff;
+    width: 30px;
+    height: 5px;
+    transition: .2s ease;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #trigger {
+    height: 25px;
+    background: none;
+  }
+  #burger:before {
+    content: " ";
+    top: 10px;
+    left: 0;
+  }
+  #burger:after {
+    content: " ";
+    top: 20px;
+    left: 0;
+  }
+  #menu-toggle:checked + #trigger + #burger {
+    top: 35px;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+  }
+
+  #menu-toggle:checked + #trigger + #burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform .2s ease;
+  }
+  #menu-toggle:checked + #trigger + #burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform .2s ease;
+  }
+  #menu {
+    padding: 20vh 0;
+    position: fixed;
+    margin: 0;
+    background-color: $menu-hover-color;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    animation: not-checked-anim .2s both;
+    transition: .2s;
+  }
+  #menu-toggle:checked + #trigger + #burger + #menu {
+    animation: checked-anim 1s ease both;
+  }
+  #menu-toggle:checked + #trigger ~ #menu > li, a {
+    display: block;
+  }
+  [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
+  }
   }
 }

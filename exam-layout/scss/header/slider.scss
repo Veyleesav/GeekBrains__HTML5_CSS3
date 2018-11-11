@@ -1,6 +1,7 @@
 @import "header__values";
 .slider{
   width: 100vw;
+  max-width: $width;
   position: absolute;
   top:0;
   .slider__bg{

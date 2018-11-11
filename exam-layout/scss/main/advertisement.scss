@@ -1,5 +1,7 @@
 @import 'main__values';
 .advertisement{
+  width: 100vw;
+  max-width: $width;
   @include default-block;
   min-height:150px;
   flex-flow: row wrap;

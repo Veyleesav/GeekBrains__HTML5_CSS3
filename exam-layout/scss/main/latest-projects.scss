@@ -1,5 +1,7 @@
 @import "main__values";
 .latest-projects{
+  width: 100vw;
+  max-width: $width;
   @include default-block;
   .latest-projects__header{
     text-transform: capitalize;

@@ -30,3 +30,42 @@
   }
 
 }
+@media screen and (max-width: 800px)
+{
+  .logo{
+    z-index:1;
+    display: flex;
+    align-self:center;
+    justify-self: flex-end;
+    position: fixed;
+    right:10vw;
+    .home-link-logo{
+      display: flex;
+      text-decoration: none;
+      .home-link-logo__logo{
+        fill:#ffffff;
+        width: 10vw;
+      }
+      .home-link-logo__logo-text{
+        display: flex;
+        font-family: $Raleway;
+        font-size: 3vh;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.001em;
+        color: #ffffff;
+        align-items: center;
+      }
+
+    }
+    &:hover .home-link-logo__logo-text{
+      color: $menu-hover-color;
+    }
+    &:hover .home-link-logo__logo{
+      fill: $menu-hover-color;
+    }
+
+  }
+}

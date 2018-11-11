@@ -1,5 +1,7 @@
 @import "main__values";
 .partners{
+  width: 100vw;
+  max-width: $width;
   @include default-block;
   background:linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/main/partners/partners__bg.jpg");
   flex-flow: row wrap;
@@ -9,5 +11,19 @@
   .partners-logo{
     padding: 0 0;
     margin: 0 45px 0 45px;
+    &:hover{
+      filter: invert(0.5) sepia(5);
+    }
+  }
+}
+@media screen and (max-width: 800px)
+{
+  .partners{
+    .partners-logo{
+      padding: 0 0;
+      margin: 0 22px 0 22px;
+      width: 30vw;
+      height: auto;
+    }
   }
 }

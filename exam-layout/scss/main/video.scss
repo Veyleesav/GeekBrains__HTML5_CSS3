@@ -1,6 +1,7 @@
 @import "main__values";
 .video{
-  overflow: hidden;
+  width: 100vw;
+  overflow-x: hidden;
   @include default-block;
   position: relative;
   .video__player{
