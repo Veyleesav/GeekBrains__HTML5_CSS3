@@ -55,6 +55,35 @@
       color: #c7b299; }
     .logo:hover .home-link-logo__logo {
       fill: #c7b299; } }
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .logo {
+    z-index: 1;
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    position: fixed;
+    right: 10vw; }
+    .logo .home-link-logo {
+      display: flex;
+      text-decoration: none; }
+      .logo .home-link-logo .home-link-logo__logo {
+        fill: #ffffff;
+        width: 8vw; }
+      .logo .home-link-logo .home-link-logo__logo-text {
+        display: flex;
+        font-family: "Raleway", "Helvetica", sans-serif;
+        font-size: 6vh;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.001em;
+        color: #ffffff;
+        align-items: center; }
+    .logo:hover .home-link-logo__logo-text {
+      color: #c7b299; }
+    .logo:hover .home-link-logo__logo {
+      fill: #c7b299; } }
 /* cuz overflow:hidden doesn`t work with positive number*/
 .header-top__mobile-menu {
   display: none; }
@@ -444,6 +473,18 @@ header {
     justify-content: space-evenly;
     align-items: center;
     min-height: 9.4%; } }
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .header-top {
+    position: fixed;
+    background: rgba(199, 178, 153, 0.3);
+    width: 100vw;
+    max-width: 1920px;
+    z-index: 15;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 20vh; } }
 .advantages {
   margin: 0 auto;
   padding: 0;
@@ -936,7 +977,9 @@ header {
     display: flex;
     flex-flow: row wrap;
     width: 100vw;
-    max-width: 1200px; }
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center; }
     .latest-projects .latest-projects__wrapper .latest-projects__project {
       padding: 0 0;
       margin: 0 15px 30px 15px;
@@ -1841,6 +1884,8 @@ header {
     margin: 0 45px 0 45px; }
     .partners .partners-logo:hover {
       filter: invert(0.5) sepia(5); }
+    .partners .partners-logo:active {
+      opacity: 0.5; }
 
 @media screen and (max-width: 800px) {
   .partners .partners-logo {
@@ -1891,6 +1936,8 @@ header {
       color: #212121; }
       .social ul li a:hover {
         color: #c7b299; }
+      .social ul li a:active {
+        opacity: 0.5; }
 
 @media screen and (max-width: 800px) {
   .social {
@@ -2158,273 +2205,282 @@ main {
         padding: 0 0 0 0;
         box-sizing: border-box;
         text-decoration: none; }
-      .information .information__dribble-widget .information__dribble-widget__photo-wrapper .information__dribble-widget__photo {
-        margin: 5px 5px 0 5px; }
-
-@media screen and (max-width: 800px) {
-  .information {
-    width: 100vw;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    max-width: 1920px;
-    flex-flow: row nowrap;
-    align-items: center;
-    text-align: center;
-    background-color: #191919;
-    justify-content: center;
-    align-items: center;
-    min-height: 508px;
-    display: flex;
-    flex-flow: row wrap; }
-    .information .information__about {
-      padding-top: 5vh;
-      padding-right: 42px;
-      max-width: 270px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-start; }
-      .information .information__about .information__about__logo {
-        display: flex; }
-        .information .information__about .information__about__logo .home-link-logo {
+        .information .information__dribble-widget .information__dribble-widget__photo-wrapper a .information__dribble-widget__photo {
+          margin: 5px 5px 0 5px; }
+        .information .information__dribble-widget .information__dribble-widget__photo-wrapper a:hover .information__dribble-widget__photo {
+          -webkit-box-shadow: 1px 1px 10px 0 #c7b299;
+          -moz-box-shadow: 1px 1px 10px 0 #c7b299;
+          box-shadow: 1px 1px 10px 0 #c7b299; }
+        .information .information__dribble-widget .information__dribble-widget__photo-wrapper a:active .information__dribble-widget__photo {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          opacity: 0.5; }
+    @media screen and (max-width: 800px) {
+      .information .information__dribble-widget .information {
+        width: 100vw;
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        max-width: 1920px;
+        flex-flow: row nowrap;
+        align-items: center;
+        text-align: center;
+        background-color: #191919;
+        justify-content: center;
+        align-items: center;
+        min-height: 508px;
+        display: flex;
+        flex-flow: row wrap; }
+        .information .information__dribble-widget .information .information__about {
+          padding-top: 5vh;
+          padding-right: 42px;
+          max-width: 270px;
           display: flex;
-          text-decoration: none; }
-          .information .information__about .information__about__logo .home-link-logo .home-link-logo__logo {
-            fill: #ffffff; }
-          .information .information__about .information__about__logo .home-link-logo .home-link-logo__logo-text {
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: flex-start; }
+          .information .information__dribble-widget .information .information__about .information__about__logo {
+            display: flex; }
+            .information .information__dribble-widget .information .information__about .information__about__logo .home-link-logo {
+              display: flex;
+              text-decoration: none; }
+              .information .information__dribble-widget .information .information__about .information__about__logo .home-link-logo .home-link-logo__logo {
+                fill: #ffffff; }
+              .information .information__dribble-widget .information .information__about .information__about__logo .home-link-logo .home-link-logo__logo-text {
+                display: flex;
+                font-family: "Raleway", "Helvetica", sans-serif;
+                font-size: 34px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: -1.4px;
+                color: #ffffff;
+                align-items: center; }
+            .information .information__dribble-widget .information .information__about .information__about__logo:hover .home-link-logo__logo-text {
+              color: #c7b299; }
+            .information .information__dribble-widget .information .information__about .information__about__logo:hover .home-link-logo__logo {
+              fill: #c7b299; }
+          .information .information__dribble-widget .information .information__about .information__about__text {
+            max-width: 258px;
+            font-family: "Montserrat", "Helvetica", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            text-align: left;
+            color: #555555;
+            padding: 0 0;
+            margin-bottom: 33px; }
+          .information .information__dribble-widget .information .information__about .information__about__read-more {
+            font-family: "Montserrat", "Helvetica", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c7b299;
+            padding: 0 0 0 0;
+            text-decoration: none;
+            cursor: pointer;
+            text-transform: capitalize;
             display: flex;
+            flex-flow: row nowrap;
+            color: #d1d1d1;
+            text-align: left; }
+            .information .information__dribble-widget .information .information__about .information__about__read-more::after {
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 4px 0 4px 5px;
+              border-color: transparent transparent transparent #c7b299;
+              display: flex;
+              justify-self: center;
+              align-self: center;
+              position: relative;
+              left: 9px;
+              margin-top: 2px; }
+            .information .information__dribble-widget .information .information__about .information__about__read-more:hover {
+              border-bottom: 1px solid;
+              margin-bottom: -1px; }
+            .information .information__dribble-widget .information .information__about .information__about__read-more::after {
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 4px 0 4px 5px;
+              border-color: transparent transparent transparent #d1d1d1;
+              display: flex;
+              justify-self: center;
+              align-self: center;
+              position: relative;
+              left: 9px;
+              margin-top: 2px; }
+        .information .information__dribble-widget .information .information__recent {
+          padding-right: 30px;
+          width: 270px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: flex-start; }
+          .information .information__dribble-widget .information .information__recent .information__recent__header {
             font-family: "Raleway", "Helvetica", sans-serif;
-            font-size: 34px;
-            font-weight: normal;
+            font-size: 24px;
+            font-weight: bold;
             font-style: normal;
             font-stretch: normal;
             line-height: normal;
-            letter-spacing: -1.4px;
+            letter-spacing: normal;
+            text-align: left;
             color: #ffffff;
-            align-items: center; }
-        .information .information__about .information__about__logo:hover .home-link-logo__logo-text {
-          color: #c7b299; }
-        .information .information__about .information__about__logo:hover .home-link-logo__logo {
-          fill: #c7b299; }
-      .information .information__about .information__about__text {
-        max-width: 258px;
-        font-family: "Montserrat", "Helvetica", sans-serif;
-        font-size: 14px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.71;
-        letter-spacing: normal;
-        text-align: left;
-        color: #555555;
-        padding: 0 0;
-        margin-bottom: 33px; }
-      .information .information__about .information__about__read-more {
-        font-family: "Montserrat", "Helvetica", sans-serif;
-        font-size: 14px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.43;
-        letter-spacing: normal;
-        text-align: left;
-        color: #c7b299;
-        padding: 0 0 0 0;
-        text-decoration: none;
-        cursor: pointer;
-        text-transform: capitalize;
-        display: flex;
-        flex-flow: row nowrap;
-        color: #d1d1d1;
-        text-align: left; }
-        .information .information__about .information__about__read-more::after {
-          content: '';
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 4px 0 4px 5px;
-          border-color: transparent transparent transparent #c7b299;
-          display: flex;
-          justify-self: center;
-          align-self: center;
-          position: relative;
-          left: 9px;
-          margin-top: 2px; }
-        .information .information__about .information__about__read-more:hover {
-          border-bottom: 1px solid;
-          margin-bottom: -1px; }
-        .information .information__about .information__about__read-more::after {
-          content: '';
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 4px 0 4px 5px;
-          border-color: transparent transparent transparent #d1d1d1;
-          display: flex;
-          justify-self: center;
-          align-self: center;
-          position: relative;
-          left: 9px;
-          margin-top: 2px; }
-    .information .information__recent {
-      padding-right: 30px;
-      width: 270px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-start; }
-      .information .information__recent .information__recent__header {
-        font-family: "Raleway", "Helvetica", sans-serif;
-        font-size: 24px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: left;
-        color: #ffffff;
-        text-transform: capitalize;
-        padding: 21.3% 0 0 0;
-        margin: 0 0; }
-      .information .information__recent .information__recent__post {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 2.8% 0 0 0;
-        text-decoration: none;
-        max-width: 270px; }
-        .information .information__recent .information__recent__post:hover .information__recent__post__time {
-          color: #ffffff; }
-        .information .information__recent .information__recent__post:hover .information__recent__post__text {
-          color: #c7b299; }
-        .information .information__recent .information__recent__post .information__recent__post__time {
-          font-family: "Montserrat", "Helvetica", sans-serif;
-          font-size: 12px;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.67;
-          letter-spacing: normal;
-          text-align: left;
-          color: #363636;
-          padding: 3.7% 0 2% 0; }
-        .information .information__recent .information__recent__post .information__recent__post__text {
-          font-family: "Montserrat", "Helvetica", sans-serif;
-          font-size: 14px;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.43;
-          letter-spacing: normal;
-          text-align: left;
-          color: #555555; }
-        .information .information__recent .information__recent__post::after {
-          display: block;
-          content: ' ';
-          width: 270px;
-          height: 2px;
-          background-color: #252525; }
-    .information .information__twitter {
-      padding-right: 30px;
-      width: 270px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-start; }
-      .information .information__twitter .information__twitter__header {
-        font-family: "Raleway", "Helvetica", sans-serif;
-        font-size: 24px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: left;
-        color: #ffffff;
-        text-transform: capitalize;
-        padding: 21.3% 0 0 0;
-        margin: 0 0; }
-      .information .information__twitter .information__twitter__post {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 2.8% 0 0 0;
-        text-decoration: none; }
-        .information .information__twitter .information__twitter__post:hover .information__twitter__post__time {
-          color: #ffffff; }
-        .information .information__twitter .information__twitter__post:hover .information__twitter__post__text {
-          color: #c7b299; }
-        .information .information__twitter .information__twitter__post .information__twitter__post__time {
-          font-family: "Montserrat", "Helvetica", sans-serif;
-          font-size: 12px;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.67;
-          letter-spacing: normal;
-          text-align: left;
-          color: #363636;
-          padding: 3.7% 0 2% 0; }
-        .information .information__twitter .information__twitter__post .information__twitter__post__text {
-          font-family: "Montserrat", "Helvetica", sans-serif;
-          font-size: 14px;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.43;
-          letter-spacing: normal;
-          text-align: left;
-          color: #555555; }
-          .information .information__twitter .information__twitter__post .information__twitter__post__text .tag {
-            color: #00bff3;
-            cursor: pointer; }
-          .information .information__twitter .information__twitter__post .information__twitter__post__text a {
+            text-transform: capitalize;
+            padding: 21.3% 0 0 0;
+            margin: 0 0; }
+          .information .information__dribble-widget .information .information__recent .information__recent__post {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2.8% 0 0 0;
             text-decoration: none;
-            color: #959595; }
-            .information .information__twitter .information__twitter__post .information__twitter__post__text a:hover {
-              border-bottom: 1px solid;
-              margin-bottom: -1px; }
-        .information .information__twitter .information__twitter__post::after {
-          display: block;
-          content: ' ';
+            max-width: 270px; }
+            .information .information__dribble-widget .information .information__recent .information__recent__post:hover .information__recent__post__time {
+              color: #ffffff; }
+            .information .information__dribble-widget .information .information__recent .information__recent__post:hover .information__recent__post__text {
+              color: #c7b299; }
+            .information .information__dribble-widget .information .information__recent .information__recent__post .information__recent__post__time {
+              font-family: "Montserrat", "Helvetica", sans-serif;
+              font-size: 12px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.67;
+              letter-spacing: normal;
+              text-align: left;
+              color: #363636;
+              padding: 3.7% 0 2% 0; }
+            .information .information__dribble-widget .information .information__recent .information__recent__post .information__recent__post__text {
+              font-family: "Montserrat", "Helvetica", sans-serif;
+              font-size: 14px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.43;
+              letter-spacing: normal;
+              text-align: left;
+              color: #555555; }
+            .information .information__dribble-widget .information .information__recent .information__recent__post::after {
+              display: block;
+              content: ' ';
+              width: 270px;
+              height: 2px;
+              background-color: #252525; }
+        .information .information__dribble-widget .information .information__twitter {
+          padding-right: 30px;
           width: 270px;
-          height: 2px;
-          background-color: #252525; }
-    .information .information__dribble-widget {
-      padding-top: 5vh;
-      max-width: 280px;
-      display: flex;
-      flex-flow: column nowrap; }
-      .information .information__dribble-widget .information__dribble-widget__header {
-        font-family: "Raleway", "Helvetica", sans-serif;
-        text-transform: capitalize;
-        font-size: 24px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: left;
-        color: #ffffff;
-        padding: 0;
-        margin: 0; }
-      .information .information__dribble-widget .information__dribble-widget__photo-wrapper {
-        padding-top: 21px;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center; }
-        .information .information__dribble-widget .information__dribble-widget__photo-wrapper a {
-          margin: 0 0 -10 0;
-          padding: 0 0 0 0;
-          box-sizing: border-box;
-          text-decoration: none; }
-        .information .information__dribble-widget .information__dribble-widget__photo-wrapper .information__dribble-widget__photo {
-          margin: 5px 5px 0 5px; } }
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: flex-start; }
+          .information .information__dribble-widget .information .information__twitter .information__twitter__header {
+            font-family: "Raleway", "Helvetica", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            text-transform: capitalize;
+            padding: 21.3% 0 0 0;
+            margin: 0 0; }
+          .information .information__dribble-widget .information .information__twitter .information__twitter__post {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2.8% 0 0 0;
+            text-decoration: none; }
+            .information .information__dribble-widget .information .information__twitter .information__twitter__post:hover .information__twitter__post__time {
+              color: #ffffff; }
+            .information .information__dribble-widget .information .information__twitter .information__twitter__post:hover .information__twitter__post__text {
+              color: #c7b299; }
+            .information .information__dribble-widget .information .information__twitter .information__twitter__post .information__twitter__post__time {
+              font-family: "Montserrat", "Helvetica", sans-serif;
+              font-size: 12px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.67;
+              letter-spacing: normal;
+              text-align: left;
+              color: #363636;
+              padding: 3.7% 0 2% 0; }
+            .information .information__dribble-widget .information .information__twitter .information__twitter__post .information__twitter__post__text {
+              font-family: "Montserrat", "Helvetica", sans-serif;
+              font-size: 14px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.43;
+              letter-spacing: normal;
+              text-align: left;
+              color: #555555; }
+              .information .information__dribble-widget .information .information__twitter .information__twitter__post .information__twitter__post__text .tag {
+                color: #00bff3;
+                cursor: pointer; }
+              .information .information__dribble-widget .information .information__twitter .information__twitter__post .information__twitter__post__text a {
+                text-decoration: none;
+                color: #959595; }
+                .information .information__dribble-widget .information .information__twitter .information__twitter__post .information__twitter__post__text a:hover {
+                  border-bottom: 1px solid;
+                  margin-bottom: -1px; }
+            .information .information__dribble-widget .information .information__twitter .information__twitter__post::after {
+              display: block;
+              content: ' ';
+              width: 270px;
+              height: 2px;
+              background-color: #252525; }
+        .information .information__dribble-widget .information .information__dribble-widget {
+          padding-top: 5vh;
+          max-width: 280px;
+          display: flex;
+          flex-flow: column nowrap; }
+          .information .information__dribble-widget .information .information__dribble-widget .information__dribble-widget__header {
+            font-family: "Raleway", "Helvetica", sans-serif;
+            text-transform: capitalize;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            padding: 0;
+            margin: 0; }
+          .information .information__dribble-widget .information .information__dribble-widget .information__dribble-widget__photo-wrapper {
+            padding-top: 21px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center; }
+            .information .information__dribble-widget .information .information__dribble-widget .information__dribble-widget__photo-wrapper a {
+              margin: 0 0 -10 0;
+              padding: 0 0 0 0;
+              box-sizing: border-box;
+              text-decoration: none; }
+            .information .information__dribble-widget .information .information__dribble-widget .information__dribble-widget__photo-wrapper .information__dribble-widget__photo {
+              margin: 5px 5px 0 5px; } }
+
 .lower-footer {
   width: 100vw;
   max-width: 1920px;

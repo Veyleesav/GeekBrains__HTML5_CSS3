@@ -46,6 +46,9 @@
       &:hover{
         color: #c7b299;
       }
+      &:active{
+        opacity: 0.5;
+      }
     }
   }
 }
