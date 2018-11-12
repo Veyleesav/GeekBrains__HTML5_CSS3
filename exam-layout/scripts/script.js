@@ -11,3 +11,10 @@ function btn(){
         document.getElementById("video__overlay").classList+=' hidden';
     }
 }
+
+function sliderArrowLeft(){
+    let leftArrow= document.getElementById("slider__arrow slider__arrow-left");
+    let rightArrow = document.getElementById("slider__arrow slider__arrow-right");
+    let bgPull = document.getElementsByClassName('slider__bg');
+    console.log(bgPull);
+}
