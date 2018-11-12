@@ -190,7 +190,7 @@
       margin-top: 20vh; }
     .header-top #menu li, .header-top a {
       width: 100vw;
-      font: "Montserrat", "Helvetica", sans-serif;
+      font-family: "Montserrat", "Helvetica", sans-serif;
       list-style: none;
       outline: 0;
       display: none;
@@ -2204,7 +2204,7 @@ main {
       align-items: center;
       justify-content: center; }
       .information .information__dribble-widget .information__dribble-widget__photo-wrapper a {
-        margin: 0 0 -10 0;
+        margin: 0 0 -10px 0;
         padding: 0 0 0 0;
         box-sizing: border-box;
         text-decoration: none; }
@@ -2477,7 +2477,7 @@ main {
             align-items: center;
             justify-content: center; }
             .information .information__dribble-widget .information .information__dribble-widget .information__dribble-widget__photo-wrapper a {
-              margin: 0 0 -10 0;
+              margin: 0 0 -10px 0;
               padding: 0 0 0 0;
               box-sizing: border-box;
               text-decoration: none; }
