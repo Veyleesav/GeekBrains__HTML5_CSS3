@@ -72,7 +72,7 @@
       .logo .home-link-logo .home-link-logo__logo-text {
         display: flex;
         font-family: "Raleway", "Helvetica", sans-serif;
-        font-size: 6vh;
+        font-size: 34px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -93,7 +93,8 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  max-width: 1920px; }
   .header-top__menu .header-top__menu__navigation-icons {
     display: flex;
     margin-left: 2vw; }
@@ -144,7 +145,7 @@
       text-transform: capitalize;
       text-decoration: none;
       font-family: "Montserrat", "Helvetica", sans-serif;
-      font-size: 1.4vh;
+      font-size: 14px;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;

@@ -8,6 +8,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  max-width: $width;
   .header-top__menu__navigation-icons{
     display: flex;
     margin-left: 2vw;
@@ -65,7 +66,7 @@
       text-transform: capitalize;
       text-decoration: none;
       font-family: $Montserrat;
-      font-size: 1.4vh;
+      font-size: 14px;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
