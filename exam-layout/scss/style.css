@@ -1767,6 +1767,9 @@ header {
         position: absolute;
         top: 20px;
         left: 20px; }
+        .recent-posts .recent-posts__article-wrapper .recent-posts__article .recent-posts__article__date p {
+          padding: 0;
+          margin: 0; }
         .recent-posts .recent-posts__article-wrapper .recent-posts__article .recent-posts__article__date .recent-posts__article__date__day {
           display: inline-block;
           padding: 0 0 9px 0; }
