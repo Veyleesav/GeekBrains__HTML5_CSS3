@@ -444,6 +444,105 @@
       border: solid 2px #d3c1ad; }
 
 /* cuz overflow:hidden doesn`t work with positive number*/
+/* cuz overflow:hidden doesn`t work with positive number*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 300%;
+  background-size: 200%, 200%;
+  background-image: none; }
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 42px;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto; }
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  border-radius: 50%;
+  background: transparent;
+  border: solid 2px transparent; }
+
+ol.carousel-indicators li {
+  background: rgba(255, 255, 255, 0.39);
+  margin-left: 4.5px;
+  margin-right: 4.5px; }
+
+ol.carousel-indicators li.active {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: solid 2px #d3c1ad;
+  margin: -2px 2px; }
+
+.carousel-inner .carousel-item {
+  background: #111111;
+  position: relative; }
+  .carousel-inner .carousel-item img {
+    width: 100vw;
+    max-width: 1920px;
+    height: auto;
+    opacity: 0.3; }
+  .carousel-inner .carousel-item .carousel-caption {
+    height: 64%;
+    font-family: "Raleway", "Helvetica", sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff; }
+    .carousel-inner .carousel-item .carousel-caption .slider__central__subheader {
+      font-weight: 500;
+      font-size: 2.2em;
+      margin-bottom: 0; }
+    .carousel-inner .carousel-item .carousel-caption .slider__central__header {
+      font-weight: 800;
+      font-size: 3.3em;
+      width: 100%;
+      margin-bottom: 4px;
+      margin-top: 0; }
+    .carousel-inner .carousel-item .carousel-caption .slider__central__text {
+      font-family: "Montserrat", "Helvetica", sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 1em;
+      width: 80vw;
+      max-width: 562px;
+      margin: 0 auto; }
+    .carousel-inner .carousel-item .carousel-caption .slider__central__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 170px;
+      min-height: 5vh;
+      border-radius: 3px;
+      box-shadow: inset 0px -3px 0 0 #736357;
+      background-color: #998675;
+      text-transform: uppercase;
+      font-family: Raleway,sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.64;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      min-height: 53px;
+      margin: 2vh auto; }
+      .carousel-inner .carousel-item .carousel-caption .slider__central__button:hover {
+        background-color: #7e6d5d; }
+      .carousel-inner .carousel-item .carousel-caption .slider__central__button:active {
+        background-color: #615347;
+        box-shadow: none; }
+
 header {
   width: 100vw;
   max-width: 1920px;
