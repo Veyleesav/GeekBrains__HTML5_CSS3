@@ -2521,11 +2521,13 @@ main {
     text-align: center;
     background: #111111;
     min-height: 111px;
-    justify-content: space-around; }
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center; }
     .lower-footer .lower-footer__left {
-      margin-left: 5vw;
+      justify-self: center;
       font-family: "Montserrat", "Helvetica", sans-serif;
-      font-size: 13px;
+      font-size: 10px;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
@@ -2554,7 +2556,7 @@ main {
     .lower-footer .lower-footer__right {
       margin-right: 5vw;
       font-family: "Montserrat", "Helvetica", sans-serif;
-      font-size: 13px;
+      font-size: 10px;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
