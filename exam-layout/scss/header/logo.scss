@@ -1,5 +1,6 @@
 @import "header__values";
 .logo{
+  margin-top: 40px;
   z-index:1;
   display: flex;
   .home-link-logo{
@@ -33,6 +34,7 @@
 @media screen and (max-width: 800px)
 {
   .logo{
+    margin-top: auto;
     z-index:1;
     display: flex;
     align-self:center;

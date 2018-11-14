@@ -5,6 +5,7 @@
   align-items: center;
   border: 1px solid gray;
   transition: width 500ms ease-out, background-color 500ms ease-out;
+  z-index:10;
   &:hover{
     width: 4vw;
     background-color:  rgba(255,255,255,0.8);
@@ -28,8 +29,8 @@
   top:40vh;
   right: 0;
   background: rgba(255,255,255,0.5);
-  height: 15vh;
-  width: 2vw;
+  height: 500px;
+  width: 20px;
  border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   ul{

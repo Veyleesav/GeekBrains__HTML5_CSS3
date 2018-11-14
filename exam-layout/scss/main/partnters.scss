@@ -33,6 +33,7 @@
 @media screen and (max-width: 812.02px) and (orientation: landscape){
   .partners{
     min-height: 40vh;
+    width: 100vw;
     background:linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/main/partners/partners__bg.jpg") bottom;
     .partners-logo{
       padding: 0 0;

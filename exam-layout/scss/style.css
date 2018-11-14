@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 .logo {
+  margin-top: 40px;
   z-index: 1;
   display: flex; }
   .logo .home-link-logo {
@@ -28,6 +29,7 @@
 
 @media screen and (max-width: 800px) {
   .logo {
+    margin-top: auto;
     z-index: 1;
     display: flex;
     align-self: center;
@@ -405,7 +407,6 @@ header {
   box-sizing: border-box; }
 
 .header-top {
-  margin-top: 40px;
   width: 100vw;
   max-width: 1920px;
   z-index: 1;
@@ -1955,6 +1956,7 @@ header {
 @media screen and (max-width: 812.02px) and (orientation: landscape) {
   .partners {
     min-height: 40vh;
+    width: 100vw;
     background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/main/partners/partners__bg.jpg") bottom; }
     .partners .partners-logo {
       padding: 0 0;
@@ -1968,12 +1970,13 @@ header {
   align-items: center;
   border: 1px solid gray;
   transition: width 500ms ease-out, background-color 500ms ease-out;
+  z-index: 10;
   position: fixed;
   top: 40vh;
   right: 0;
   background: rgba(255, 255, 255, 0.5);
-  height: 15vh;
-  width: 2vw;
+  height: 500px;
+  width: 20px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px; }
   .social:hover {
