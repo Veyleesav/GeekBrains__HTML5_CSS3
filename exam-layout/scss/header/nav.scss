@@ -83,7 +83,7 @@
 
   }
 }
-@media screen and (max-width: 800px)
+@media screen and (max-width: 812.02px)
 {
   .header-top{
     max-height: 10vh;
@@ -93,7 +93,7 @@
       align-self: center;
       justify-self: flex-end;
       position: fixed;
-      left: 68vw;
+      left: 60vw;
     }
   .header-top__menu {
     visibility: hidden;
@@ -124,6 +124,10 @@
   }
   #menu{
     margin-top: 20vh;
+    a{
+        text-decoration: none;
+      color:#ffffff;
+    }
   }
   #menu li, a {
     width: 100vw;
@@ -141,6 +145,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+
   }
   #menu li {
     padding: 1vh 0 1vh 0;
@@ -201,13 +206,13 @@
     padding: 20vh 0;
     position: fixed;
     margin: 0;
-    background-color: $menu-hover-color;
+    background: linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/header/slider/header__slider__img-2.jpg") center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     animation: not-checked-anim .2s both;
     transition: .2s;
   }
   #menu-toggle:checked + #trigger + #burger + #menu {
-    animation: checked-anim 1s ease both;
+    animation: checked-anim 0.1s ease-out both;
   }
   #menu-toggle:checked + #trigger ~ #menu > li, a {
     display: block;

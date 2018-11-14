@@ -38,8 +38,8 @@
     @include default-button;
   }
 }
-@media screen and (max-width: 800px) {
-  .advertisement{
+@media screen and (max-width: 812.02px) {
+  main .advertisement{
     @include default-block;
     min-height:150px;
     flex-flow: row wrap;

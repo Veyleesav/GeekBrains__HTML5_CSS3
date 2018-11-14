@@ -102,7 +102,7 @@
     }
   }
 }
-@media screen and (max-width: 800px)
+@media screen and (max-width: 812.02px)
 {
   .mobile-devices{
     width: 100vw;
@@ -180,6 +180,134 @@
           flex-flow: column nowrap;
           padding: 0 0;
 
+          .mobile-devices__caption__list__item{
+            details{
+              summary {
+                outline: none;
+                position: relative;
+                &::-webkit-details-marker {
+                  display: none;
+                }
+                &:hover{
+                  cursor: pointer;
+                }
+                &::before{
+                  content: url("../img/main/mobile-devices/mobile-devices__arrow.png");
+                  position: absolute;
+                  display:block;
+                  width: 21px;
+                  height:21px;
+                  left: -35px;
+                  top: 5px;
+                }
+              }
+            }
+            .mobile-devices__caption__list__item__details[open] > .mobile-devices__caption__list__item__details__summary::before {
+              content: url("../img/main/mobile-devices/mobile-devices__arrow.png");
+              position: absolute;
+              display:block;
+              width: 21px;
+              height:21px;
+              left: -35px;
+              top: 5px;
+              -webkit-transform: rotate(90deg);
+              -moz-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 812.02px) and (orientation: landscape){
+  .mobile-devices{
+    width: 100vw;
+    max-width: $width;
+    @include default-block;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fbfaf8;
+    .mobile-devices__wrapper{
+      width:100vw;
+      max-width: 1110px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 200px;
+      .mobile-devices__picture{
+        height: 100vh;
+        width: auto;
+        max-width: 423px;
+        max-height: 616px;
+        align-self: flex-end;
+        justify-self: flex-start;
+        margin-right:15vw;
+      }
+      .mobile-devices__caption{
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .mobile-devices__caption__header{
+          align-self: center;
+          justify-self: center;
+          width: 80vw;
+          font-family: $Raleway;
+          font-size: 24px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #555555;
+          padding: 40px 0 20px 0;
+          position: absolute;
+          top:-350px;
+          left: -55vw;
+        }
+        .mobile-devices__caption__text{
+          align-self: center;
+          justify-self: center;
+          width: 80vw;
+          font-family: $Montserrat;
+          font-size: 12px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.75;
+          letter-spacing: normal;
+          color: #8c8c8c;
+          margin: 0 auto;
+          padding: 0 0 45px 0;
+          position: absolute;
+          top:-250px;
+          left: -55vw;
+        }
+        .mobile-devices__caption__list{
+          align-self: center;
+          justify-self: center;
+          max-width: 30vw;
+          font-family: $Montserrat;
+          font-size: 12px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 2;
+          letter-spacing: normal;
+          color: #8c8c8c;
+          list-style-type: none;
+          display: flex;
+          flex-flow: column nowrap;
+          padding: 0 0;
+          position: relative;
+          top: -80px;
           .mobile-devices__caption__list__item{
             details{
               summary {
