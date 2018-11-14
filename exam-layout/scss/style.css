@@ -905,6 +905,8 @@ header {
         background-color: #998675;
         color: #ffffff;
         cursor: pointer; }
+      .latest-projects .latest-projects__menu .latest-projects__menu__button:active {
+        background-color: #615347; }
       .latest-projects .latest-projects__menu .latest-projects__menu__button:nth-child(1) {
         min-width: 70px; }
       .latest-projects .latest-projects__menu .latest-projects__menu__button:nth-child(5) {

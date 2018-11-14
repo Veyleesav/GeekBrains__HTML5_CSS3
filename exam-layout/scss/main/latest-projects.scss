@@ -57,6 +57,9 @@
         color: #ffffff;
         cursor: pointer;
       }
+      &:active{
+        background-color: $button-active;
+      }
 
       &:nth-child(1){
         min-width: 70px;
