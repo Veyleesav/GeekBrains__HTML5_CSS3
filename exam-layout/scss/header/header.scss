@@ -1,6 +1,5 @@
 @import "logo";
 @import "nav";
-@import "slider";
 @import "header__values";
 @import "bootstrap-slider";
 @mixin centring{
@@ -12,6 +11,7 @@ header{
   height: $header-height;
   @include centring;
   position: relative;
+  overflow: hidden;
 }
 .header-top{
   width: 100vw;
@@ -27,7 +27,7 @@ flex-flow: row wrap;
 @media screen and (max-width: 800px)
 {
   .header-top{
-    position: fixed;
+    position: absolute;
     background: rgba(199,178,153,0.3);
     width: 100vw;
     max-width: $width;

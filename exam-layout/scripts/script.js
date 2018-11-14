@@ -12,9 +12,6 @@ function btn(){
     }
 }
 
-function sliderArrowLeft(){
-    let leftArrow= document.getElementById("slider__arrow slider__arrow-left");
-    let rightArrow = document.getElementById("slider__arrow slider__arrow-right");
-    let bgPull = document.querySelectorAll('slider bg slide__translated');
-    console.log(bgPull);
-}
+$('.carousel').carousel({
+    interval: 10000
+})

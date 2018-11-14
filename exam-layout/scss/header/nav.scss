@@ -44,7 +44,8 @@
         color: #ffffff;
         border-bottom: 1px solid $menu-hover-color;
         margin-top: 1px;
-        width: 20vw;
+        width: 40vw;
+        max-width: 150px;
         -webkit-transition: width 1s ease-out;
         -moz-transition: width 1s ease-out;
         -ms-transition: width 1s ease-out;

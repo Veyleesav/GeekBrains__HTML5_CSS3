@@ -1,9 +1,41 @@
 @import "header__values";
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 300%;
-  background-size: 200%, 200%;
-  background-image: none;
+.carousel{
+  margin-top: -96px;
+  z-index:0 !important;
+  width: 100vw;
+  height: auto;
+  max-width: $width;
+  max-height: 1024px;
+  .carousel-control-prev{
+    &:hover {
+      opacity: 1;
+      .carousel-control-prev-icon {
+        background-image: url("../img/header/slider/slider__arrow-left-hover.png");
+      }
+    }
+  }
+  .carousel-control-prev-icon{
+    width: 40px;
+    height: 73px;
+    background-image: url("../img/header/slider/slider__arrow-left.png");
+    background-size: 40px 73px;
+  }
+  .carousel-control-next{
+    transform: rotate(180deg);
+    &:hover {
+      opacity: 1;
+      .carousel-control-next-icon {
+        background-image: url("../img/header/slider/slider__arrow-left-hover.png");
+        opacity: 1;
+      }
+    }
+  }
+  .carousel-control-next-icon{
+    width: 40px;
+    height: 73px;
+    background-image: url("../img/header/slider/slider__arrow-left.png");
+    background-size: 40px 73px;
+  }
 }
 
 ol.carousel-indicators {
@@ -39,7 +71,9 @@ ol.carousel-indicators li.active {
   margin: -2px 2px;
 }
 .carousel-inner{
+  background: #414346;
   .carousel-item{
+    backface-visibility: visible;
     background: #111111;
     position: relative;
     img{
