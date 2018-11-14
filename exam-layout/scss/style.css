@@ -676,15 +676,21 @@ header {
     .realization .realization__images-wrapper .realization__image-left {
       z-index: 2;
       top: 80px;
-      left: 346px; }
+      left: 146px;
+      max-width: 770px;
+      max-height: 400px; }
     .realization .realization__images-wrapper .realization__image-center {
       z-index: 3;
       top: 0;
-      left: 576px; }
+      left: 376px;
+      max-width: 700px;
+      max-height: 482px; }
     .realization .realization__images-wrapper .realization__image-right {
       z-index: 2;
       top: 80px;
-      left: 806px; }
+      left: 606px;
+      max-width: 770px;
+      max-height: 400px; }
     .realization .realization__images-wrapper .realization__image-left:hover, .realization .realization__images-wrapper .realization__image-right:hover {
       transform: scaleY(1.205) translateY(-32px); }
     .realization .realization__images-wrapper .realization__image-left:hover ~ .realization__image-center {
@@ -708,6 +714,58 @@ header {
       padding: 0 0 24px 0; }
     .realization .realization__images-wrapper {
       display: none; } }
+@media screen and (max-width: 1024px) {
+  .realization {
+    min-height: 500px; }
+    .realization .realization__images-wrapper {
+      position: relative;
+      width: 100vw;
+      max-width: 1920px;
+      display: flex; }
+      .realization .realization__images-wrapper .realization__image {
+        margin-top: 5px;
+        position: absolute;
+        top: 200px; }
+        .realization .realization__images-wrapper .realization__image:hover {
+          z-index: 2;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          transition-property: none; }
+      .realization .realization__images-wrapper .realization__image-left {
+        z-index: 2;
+        top: 44px;
+        max-width: 770px;
+        max-height: 400px;
+        width: 40vw;
+        height: auto;
+        left: 100px; }
+      .realization .realization__images-wrapper .realization__image-center {
+        z-index: 3;
+        top: 0;
+        left: 276px;
+        width: 40vw;
+        height: auto;
+        max-width: 700px;
+        max-height: 482px; }
+      .realization .realization__images-wrapper .realization__image-right {
+        z-index: 2;
+        top: 44px;
+        left: 506px;
+        width: 40vw;
+        height: auto; }
+      .realization .realization__images-wrapper .realization__image-left:hover, .realization .realization__images-wrapper .realization__image-right:hover {
+        transform: none; }
+      .realization .realization__images-wrapper .realization__image-left:hover ~ .realization__image-center {
+        /* WORKS */
+        transform: none;
+        transition-property: transform;
+        transition-duration: 0.3s; }
+      .realization .realization__images-wrapper .realization__image-right:hover + .realization__image-center {
+        /* DOESEN`T WORK */
+        transform: none;
+        transition-property: transform;
+        transition-duration: 0.3s; } }
 .advertisement {
   width: 100vw;
   max-width: 1920px;
