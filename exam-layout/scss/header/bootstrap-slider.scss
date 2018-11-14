@@ -1,11 +1,11 @@
 @import "header__values";
 .carousel{
-  margin-top: -96px;
   z-index:0 !important;
   width: 100vw;
   height: auto;
   max-width: $width;
   max-height: 1024px;
+  margin-top: -7.5%;
   .carousel-control-prev{
     &:hover {
       opacity: 1;
