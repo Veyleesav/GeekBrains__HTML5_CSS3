@@ -1910,10 +1910,13 @@ main {
   text-align: center;
   background-color: #191919;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 508px;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box; }
   .information .information__about {
     padding-right: 42px;
     max-width: 270px;
@@ -1922,7 +1925,8 @@ main {
     justify-content: center;
     align-items: flex-start; }
     .information .information__about .information__about__logo {
-      display: flex; }
+      display: flex;
+      margin-bottom: 30px; }
       .information .information__about .information__about__logo .home-link-logo {
         display: flex;
         text-decoration: none; }
@@ -2021,13 +2025,13 @@ main {
       text-align: left;
       color: #ffffff;
       text-transform: capitalize;
-      margin: 0 0; }
+      margin: 18px 0 0 0; }
     .information .information__recent .information__recent__post {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: flex-start;
-      padding: 2.8% 0 0 0;
+      padding: 0 0 0 0;
       text-decoration: none;
       max-width: 270px; }
       .information .information__recent .information__recent__post:hover .information__recent__post__time {
@@ -2044,7 +2048,8 @@ main {
         letter-spacing: normal;
         text-align: left;
         color: #363636;
-        padding: 3.7% 0 2% 0; }
+        margin: 0 0;
+        padding: 33px 0 0 0; }
       .information .information__recent .information__recent__post .information__recent__post__text {
         font-family: "Montserrat", "Helvetica", sans-serif;
         font-size: 14px;
@@ -2080,7 +2085,7 @@ main {
       color: #ffffff;
       text-transform: capitalize;
       padding: 0 0 0 0;
-      margin: 0 0; }
+      margin: 18px 0 0 0; }
     .information .information__twitter .information__twitter__post {
       display: flex;
       flex-flow: column nowrap;
@@ -2144,7 +2149,7 @@ main {
       text-align: left;
       color: #ffffff;
       padding: 0;
-      margin: 0; }
+      margin: 18px 0 0 0; }
     .information .information__dribble-widget .information__dribble-widget__photo-wrapper {
       padding-top: 21px;
       display: flex;
