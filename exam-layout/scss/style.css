@@ -923,7 +923,8 @@ header {
       .latest-projects .latest-projects__wrapper .latest-projects__project:hover .latest-projects__project__modal {
         display: flex; }
       .latest-projects .latest-projects__wrapper .latest-projects__project:hover .latest-projects__project__caption {
-        background-color: #362f2d; }
+        background-color: #362f2d;
+        z-index: 6; }
         .latest-projects .latest-projects__wrapper .latest-projects__project:hover .latest-projects__project__caption .latest-projects__project__caption__header {
           color: #ffffff; }
         .latest-projects .latest-projects__wrapper .latest-projects__project:hover .latest-projects__project__caption .latest-projects__project__caption__text {

@@ -83,6 +83,7 @@
       }
       &:hover .latest-projects__project__caption{
         background-color: #362f2d;
+        z-index:6;
         .latest-projects__project__caption__header{
           color: #ffffff;
         }
