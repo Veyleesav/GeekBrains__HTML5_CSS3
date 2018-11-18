@@ -7,7 +7,7 @@
   transition: width 500ms ease-out, background-color 500ms ease-out;
   z-index:10;
   &:hover{
-    width: 4vw;
+    width: 20%;
     background-color:  rgba(255,255,255,0.8);
     p{
       display: none;
@@ -29,8 +29,8 @@
   top:40vh;
   right: 0;
   background: rgba(255,255,255,0.5);
-  height: 500px;
-  max-width: 20px;
+  max-height: 500px;
+  min-width: 30px;
  border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   ul{
