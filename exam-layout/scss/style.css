@@ -676,19 +676,21 @@ header {
     .realization .realization__images-wrapper .realization__image-left {
       z-index: 2;
       top: 80px;
-      left: 146px;
+      right: 10%;
       max-width: 770px;
       max-height: 400px; }
     .realization .realization__images-wrapper .realization__image-center {
       z-index: 3;
-      top: 0;
-      left: 376px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
       max-width: 700px;
       max-height: 482px; }
     .realization .realization__images-wrapper .realization__image-right {
       z-index: 2;
       top: 80px;
-      left: 606px;
+      left: 10%;
       max-width: 770px;
       max-height: 400px; }
     .realization .realization__images-wrapper .realization__image-left:hover, .realization .realization__images-wrapper .realization__image-right:hover {
@@ -739,11 +741,14 @@ header {
         max-height: 400px;
         width: 40vw;
         height: auto;
-        left: 100px; }
+        left: 10%; }
       .realization .realization__images-wrapper .realization__image-center {
         z-index: 3;
+        margin-left: auto;
+        margin-right: auto;
         top: 0;
-        left: 276px;
+        left: 0;
+        right: 0;
         width: 40vw;
         height: auto;
         max-width: 700px;
@@ -751,7 +756,7 @@ header {
       .realization .realization__images-wrapper .realization__image-right {
         z-index: 2;
         top: 44px;
-        left: 506px;
+        left: 50%;
         width: 40vw;
         height: auto; }
       .realization .realization__images-wrapper .realization__image-left:hover, .realization .realization__images-wrapper .realization__image-right:hover {
