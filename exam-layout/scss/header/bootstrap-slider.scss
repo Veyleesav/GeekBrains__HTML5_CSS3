@@ -121,3 +121,15 @@ ol.carousel-indicators li.active {
 
   }
 }
+@media screen and (max-width: 1024.5px) and (orientation: landscape)
+{
+  .carousel{
+    margin-top: -9.4%;
+  }
+}
+@media screen and (max-width: 1366px) and (orientation: portrait)
+{
+  .carousel{
+    margin-top: -9.4%;
+  }
+}

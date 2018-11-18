@@ -398,6 +398,12 @@ ol.carousel-indicators li.active {
           background-color: #615347;
           box-shadow: none; }
 
+@media screen and (max-width: 1024.5px) and (orientation: landscape) {
+  .carousel {
+    margin-top: -9.4%; } }
+@media screen and (max-width: 1366px) and (orientation: portrait) {
+  .carousel {
+    margin-top: -9.4%; } }
 header {
   width: 100vw;
   max-width: 1920px;
