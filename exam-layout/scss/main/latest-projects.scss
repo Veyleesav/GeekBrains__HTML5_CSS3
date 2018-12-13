@@ -1,0 +1,185 @@
+@import "main__values";
+.latest-projects{
+  width: 100vw;
+  max-width: $width;
+  @include default-block;
+  .latest-projects__header{
+    text-transform: capitalize;
+    font-family: $Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #555555;
+    margin: 0 auto;
+    padding: 81px 0 24px 0;
+  }
+  .latest-projects__text{
+    font-family: Montserrat,sans-serif;
+    width: 80vw;
+    max-width: 770px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #8c8c8c;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+  .latest-projects__menu{
+    padding: 0 0 40px 0;
+    .latest-projects__menu__button{
+      outline: none;
+      text-transform: capitalize;
+      min-width: 120px;
+      min-height: 32px;
+      border-radius: 3px;
+      background-color: #ebebeb;
+      font-family: Montserrat,sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #8c8c8c;
+      border-color: transparent;
+      margin-bottom: 2vh ;
+      &:hover{
+        background-color: #998675;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      &:active{
+        background-color: $button-active;
+      }
+
+      &:nth-child(1){
+        min-width: 70px;
+      }
+      &:nth-child(5){
+        min-width: 135px;
+      }
+    }
+  }
+  .latest-projects__wrapper{
+    margin-top: -2vh;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    .latest-projects__project{
+      padding: 0 0;
+      margin: 0 15px 30px 15px ;
+      position: relative;
+      &:hover .latest-projects__project__modal{
+        display:flex;
+      }
+      &:hover .latest-projects__project__caption{
+        background-color: #362f2d;
+        z-index:6;
+        .latest-projects__project__caption__header{
+          color: #ffffff;
+        }
+        .latest-projects__project__caption__text{
+          color: #c7b299;
+        }
+        &:before{
+          z-index:6;
+          content:'';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 15px 10px 15px;
+          border-color: transparent transparent #362f2d transparent;
+          top:-10px;
+          left:19px;
+        }
+      }
+      .latest-projects__project__img{
+        width: 93vw;
+        max-width: 370px;
+        max-height: 237px;
+        margin: 0;
+        padding: 0;
+      }
+      .latest-projects__project__modal{
+        z-index:5;
+        position: absolute;
+        width: 93vw;
+        height: 237px;
+        max-width: 370px;
+        max-height: 237px;
+        align-items: center;
+        justify-content: center;
+        top:0;
+        background: rgba(17, 17, 17, 0.7);
+        display: none;
+        .latest-projects__project__modal__icon{
+          fill: #ffffff;
+          margin: 0 14px 0 14px;
+          cursor: pointer;
+          &:hover{
+            fill:#c7b299
+          }
+        }
+      }
+      .latest-projects__project__caption{
+        position: relative;
+        margin: -4px 0 0 0;
+        background: #fbfaf9;
+        text-align: left;
+        &:before{
+          content:'';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 15px 10px 15px;
+          border-color: transparent transparent #fbfaf8 transparent;
+          top:-10px;
+          left:19px;
+        }
+
+        .latest-projects__project__caption__header{
+          padding: 30px 0 14px 29px;
+          margin: 0 0;
+          font-family: $Raleway;
+          font-size: 20px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #c7b299;
+        }
+        .latest-projects__project__caption__text{
+          margin: 0 0;
+          padding: 0 0 27px 30px;
+          font-family: $Montserrat;
+          font-size: 14px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          color: #d1d1d1;
+        }
+      }
+    }
+  }
+  .latest-projects__load-btn{
+    @include default-button;
+    margin: 40px 0 80px 0;
+  }
+}

@@ -1,0 +1,210 @@
+@import "main__values";
+.counter{
+  @include default-block;
+  @include gradient-bg-default;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  .counter__card{
+    padding: 0 40px 0 40px;
+    margin: 44px 0 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(1):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 44px;
+      height: 44px;
+      background-position: 0 0;
+    }
+    &:nth-child(2):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 48px;
+      height: 44px;
+      background-position: -54px 0;
+    }
+    &:nth-child(3):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 44px;
+      height: 44px;
+      background-position: -112px 0;
+    }
+    &:nth-child(4):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 44px;
+      height: 44px;
+      background-position: -166px 0;
+    }
+    &:nth-child(5):before{
+      align-self: center;
+      margin-bottom: 30px;
+      content: '';
+      background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+      width: 54px;
+      height: 44px;
+      background-position: -220px 0;
+    }
+
+
+    .counter__card__number{
+      font-family: $Montserrat;
+      font-size: 48px;
+      font-weight: 200;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.75;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+    .counter__card__text{
+      text-transform: uppercase;
+      font-family: $Montserrat;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: center;
+      color: #c7b299;
+      margin-bottom:0;
+      margin-top: 0;
+      padding:21px 0 0 0;
+      display: flex;
+      flex-flow: column;
+      &:after{
+        display: flex;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        align-self: center;
+        margin-top: 30px;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 812.02px)
+{
+  @import "main__values";
+  .counter{
+    @include default-block;
+    @include gradient-bg-default;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    .counter__card{
+      padding: 0 20px 0 20px;
+      margin: 22px 0 0 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-child(1):before{
+        align-self: center;
+        margin-bottom: 30px;
+        content: '';
+        background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+        width: 44px;
+        height: 44px;
+        background-position: 0 0;
+      }
+      &:nth-child(2):before{
+        align-self: center;
+        margin-bottom: 30px;
+        content: '';
+        background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+        width: 48px;
+        height: 44px;
+        background-position: -54px 0;
+      }
+      &:nth-child(3):before{
+        align-self: center;
+        margin-bottom: 30px;
+        content: '';
+        background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+        width: 44px;
+        height: 44px;
+        background-position: -112px 0;
+      }
+      &:nth-child(4):before{
+        align-self: center;
+        margin-bottom: 30px;
+        content: '';
+        background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+        width: 44px;
+        height: 44px;
+        background-position: -166px 0;
+      }
+      &:nth-child(5):before{
+        align-self: center;
+        margin-bottom: 30px;
+        content: '';
+        background: transparent url('../img/main/counter/counter__icons-sprite.png') no-repeat center;
+        width: 54px;
+        height: 44px;
+        background-position: -220px 0;
+      }
+
+
+      .counter__card__number{
+        font-family: $Montserrat;
+        font-size: 48px;
+        font-weight: 200;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.75;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+      }
+      .counter__card__text{
+        text-transform: uppercase;
+        font-family: $Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: center;
+        color: #c7b299;
+        margin-bottom:0;
+        margin-top: 0;
+        padding:21px 0 0 0;
+        display: flex;
+        flex-flow: column;
+        &:after{
+          display: flex;
+          content: '';
+          width: 30px;
+          height: 2px;
+          background-color: #ffffff;
+          align-self: center;
+          margin-top: 30px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
+}

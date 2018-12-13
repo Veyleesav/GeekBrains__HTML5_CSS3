@@ -1,0 +1,45 @@
+@import "main__values";
+.partners{
+  width: 100vw;
+  max-width: $width;
+  @include default-block;
+  background:linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/main/partners/partners__bg.jpg");
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 489px;
+  .partners-logo{
+    padding: 0 0;
+    margin: 0 45px 0 45px;
+    &:hover{
+      filter: invert(0.5) sepia(5);
+    }
+    &:active{
+      opacity: 0.5;
+    }
+  }
+}
+@media screen and (max-width: 812.02px)
+{
+  .partners{
+    .partners-logo{
+      padding: 0 0;
+      margin: 0 22px 0 22px;
+      width: 30vw;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 812.02px) and (orientation: landscape){
+  .partners{
+    min-height: 40vh;
+    width: 100vw;
+    background:linear-gradient(0deg,rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url("../img/main/partners/partners__bg.jpg") bottom;
+    .partners-logo{
+      padding: 0 0;
+      margin: 0 22px 0 22px;
+      width: 15vw;
+      height: auto;
+    }
+  }
+}

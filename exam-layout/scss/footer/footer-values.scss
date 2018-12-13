@@ -1,0 +1,81 @@
+$width:1920px;
+$Raleway: 'Raleway', 'Helvetica', sans-serif;
+$Montserrat: 'Montserrat','Helvetica', sans-serif;
+$Roboto: 'Roboto','Helvetica', sans-serif;
+@mixin centring-flex{
+  margin: 0 auto;
+  padding:0;
+  display: flex;
+}
+@mixin default-block{
+  @include centring-flex;
+  max-width: $width;
+  flex-flow: row nowrap;
+  align-items: center;
+  text-align: center;
+}
+@mixin logo{
+    display: flex;
+    .home-link-logo{
+      display: flex;
+      text-decoration: none;
+      .home-link-logo__logo{
+        fill:#ffffff;
+      }
+      .home-link-logo__logo-text{
+        display: flex;
+        font-family: $Raleway;
+        font-size: 34px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -1.4px;
+        color: #ffffff;
+        align-items: center;
+      }
+
+    }
+    &:hover .home-link-logo__logo-text{
+      color: $menu-hover-color;
+    }
+    &:hover .home-link-logo__logo{
+      fill: $menu-hover-color;
+    }
+
+}
+@mixin read-more{
+  font-family: $Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c7b299;
+  padding: 0 0 0 0;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  display: flex;
+  flex-flow: row nowrap;
+  &::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent #c7b299;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    left:9px;
+    margin-top:2px;
+  }
+  &:hover{
+    border-bottom: 1px solid;
+    margin-bottom: -1px;
+  }
+}

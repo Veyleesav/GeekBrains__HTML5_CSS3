@@ -1,0 +1,181 @@
+/* DISABLED */
+/* NON-BOOTSTRAP HEADER STYLES*/
+/* cuz overflow:hidden doesn`t work with positive number*/
+.slider {
+  width: 100vw;
+  max-width: 1920px;
+  position: absolute;
+  top: 0; }
+  .slider .slider__bg {
+    z-index: 0;
+    width: 100vw;
+    max-width: 1920px;
+    height: 1024px;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: transform 1s; }
+  .slider #slider__bg-1 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-1.jpg"); }
+  .slider #slider__bg-2 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-2.jpg") no-repeat;
+    margin-top: -1024px; }
+  .slider #slider__bg-3 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-3.jpg") no-repeat;
+    margin-top: -1024px; }
+  .slider #slider__bg-4 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-4.jpg") no-repeat;
+    margin-top: -1024px; }
+  .slider #slider__bg-5 {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header/slider/header__slider__img-5.jpg") no-repeat;
+    margin-top: -1024px; }
+  .slider .slide__translated {
+    transform: translateX(-5760px); }
+  .slider .slider__central-block {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    max-width: 1920px;
+    height: 0; }
+    .slider .slider__central-block .slider__arrow {
+      width: 3em;
+      height: 3em;
+      border-width: 0.25vh 0.25vh 0 0;
+      border-style: solid;
+      margin: 0.3vw;
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      opacity: 0.5; }
+    .slider .slider__central-block .slider__arrow-left {
+      margin-top: -50vh;
+      transform: rotate(-135deg); }
+      .slider .slider__central-block .slider__arrow-left:hover {
+        cursor: pointer;
+        color: #d3c1ad; }
+    .slider .slider__central-block .slider__arrow-right {
+      transform: rotate(45deg);
+      top: -50vh; }
+      .slider .slider__central-block .slider__arrow-right:hover {
+        cursor: pointer;
+        color: #d3c1ad; }
+    .slider .slider__central-block .slider__central {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      min-width: 30vw;
+      margin-top: -1044.48px;
+      font-family: "Raleway", "Helvetica", sans-serif;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      width: 31%; }
+      .slider .slider__central-block .slider__central .slider__central__subheader {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 2.2em;
+        width: 77%;
+        margin-bottom: 0; }
+      .slider .slider__central-block .slider__central .slider__central__header {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 3.3em;
+        width: 100%;
+        margin-bottom: 4px;
+        margin-top: 0; }
+      .slider .slider__central-block .slider__central .slider__central__text {
+        display: flex;
+        font-family: "Montserrat", "Helvetica", sans-serif;
+        align-content: center;
+        justify-content: center;
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 1em;
+        width: 99%; }
+      .slider .slider__central-block .slider__central .slider__central__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 170px;
+        min-height: 5vh;
+        border-radius: 3px;
+        box-shadow: inset 0px -3px 0 0 #736357;
+        background-color: #998675;
+        text-transform: uppercase;
+        font-family: Raleway,sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.64;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 2vh;
+        min-height: 5vh; }
+        .slider .slider__central-block .slider__central .slider__central__button:hover {
+          background-color: #7e6d5d; }
+        .slider .slider__central-block .slider__central .slider__central__button:active {
+          background-color: #615347;
+          box-shadow: none; }
+  .slider .slider__radio-buttons {
+    display: flex;
+    z-index: 1;
+    margin-top: -4vh;
+    justify-content: center;
+    align-items: center;
+    /* The container */
+    /* Hide the browser's default radio button */
+    /* Create a custom radio button */
+    /* On mouse-over*/
+    /* When the radio button is checked, add a blue background */ }
+    .slider .slider__radio-buttons .container {
+      align-self: center;
+      justify-self: center;
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 3em;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .slider .slider__radio-buttons .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    .slider .slider__radio-buttons .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 11px;
+      width: 11px;
+      background-color: #ffffff;
+      opacity: 0.5;
+      border-radius: 50%; }
+    .slider .slider__radio-buttons .container:hover input ~ .checkmark {
+      background-color: #c7b299; }
+    .slider .slider__radio-buttons .container input:checked ~ .checkmark {
+      background-color: transparent;
+      margin: -2px -2px;
+      border: solid 2px #d3c1ad; }
+
+/*# sourceMappingURL=slider.css.map */

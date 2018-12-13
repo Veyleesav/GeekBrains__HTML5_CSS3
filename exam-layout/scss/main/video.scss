@@ -1,0 +1,191 @@
+@import "main__values";
+.video{
+  width: 100vw;
+  overflow-x: hidden;
+  @include default-block;
+  position: relative;
+  .video__player{
+    width: 100vw;
+    height: auto;
+    max-width: 1920px;
+    max-height: 705px;
+    object-fit: fill;
+  }
+  .video__overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 705px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    .video__overlay__play{
+      z-index:5;
+      outline: none;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border-color: transparent;
+      background-color: rgba(0,0,0,0.2);
+      position: relative;
+      padding: 0;
+      &:hover{
+        cursor: pointer;
+      }
+      &::after{
+        content: url("../img/main/video/video__play-btn.svg");
+        position: absolute;
+        max-width: 70px;
+        max-height: 70px;
+        top:13px;
+        left:13px;
+      }
+    }
+    .video__overlay__header{
+      font-family: $Raleway;
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 0;
+      padding: 38px 0 0 0;
+      text-transform: capitalize;
+      width: 60vw;
+      max-width: 390px;
+    }
+    .video__overlay__text{
+      font-family: $Montserrat;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      width: 60vw;
+      max-width: 561px;
+      margin: 0;
+      padding:15px 0 28px 0;
+    }
+    .video__overlay__length{
+      font-family: $Montserrat;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: center;
+      color: #c7b299;
+      margin: 0;
+      padding: 0;
+    }
+    }
+  .hidden{
+    display: none;
+  }
+  }
+@media screen and (max-width: 812.02px)
+{
+  .video{
+    overflow: hidden;
+    @include default-block;
+    position: relative;
+    .video__player{
+      width: 100vw;
+      height: auto;
+      max-width: 1920px;
+      max-height: 705px;
+      object-fit: fill;
+    }
+    .video__overlay{
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      max-width: 1920px;
+      max-height: 705px;
+      text-align: center;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      .video__overlay__play{
+        z-index:5;
+        outline: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-color: transparent;
+        background-color: rgba(0,0,0,0.2);
+        position: relative;
+        padding: 0;
+        &:hover{
+          cursor: pointer;
+        }
+        &::after{
+          content: url("../img/main/video/video__play-btn.svg");
+          position: absolute;
+          max-width: 70px;
+          max-height: 70px;
+          top:13px;
+          left:13px;
+        }
+      }
+      .video__overlay__header{
+        font-family: $Raleway;
+        font-size: 80%;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 0;
+        padding: 38px 0 0 0;
+        text-transform: capitalize;
+        width: 390px;
+      }
+      .video__overlay__text{
+        width: 80vw;
+        font-family: $Montserrat;
+        font-size: 50%;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        padding:15px 0 28px 0;
+      }
+      .video__overlay__length{
+        font-family: $Montserrat;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: center;
+        color: #c7b299;
+        margin: 0;
+        padding-bottom: 2vh;
+      }
+    }
+    .hidden{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+$width:1920px;
+$button-color:#998675;
+$button-hover: darken($button-color,10%);
+$button-active: darken($button-color, 20%);
+$Raleway: 'Raleway', 'Helvetica', sans-serif;
+$Montserrat: 'Montserrat','Helvetica', sans-serif;
+$Roboto: 'Roboto','Helvetica', sans-serif;
+@mixin centring-flex{
+  margin: 0 auto;
+  padding:0;
+  display: flex;
+}
+@mixin default-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 170px;
+    min-height: 50px;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: $button-color;
+    text-transform: uppercase;
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    &:hover{
+      background-color: $button-hover;
+    }
+    &:active{
+      background-color: $button-active;
+      box-shadow: none;
+    }
+}
+@mixin default-block{
+  @include centring-flex;
+  max-width: $width;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+}
+@mixin gradient-bg-default{
+  background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+  background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+  background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+  background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+  background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  padding: 2vh 0 2vh 0;
+}
